@@ -1,0 +1,289 @@
+/*******************************************************/
+/************************ MENU *************************/
+/*******************************************************/
+
+.main-menu {
+	z-index: 2;
+	width: 100%;
+	position: fixed;
+	background: $black;
+	height: 50px;
+	
+	ul {
+		text-align: center;
+		margin: 0;
+		color: $white;
+
+		li {
+			display: inline-block;
+			padding-left: 0px;
+			margin-left: 1%;
+			margin-right: 1%;
+			
+			a {
+				color: $white;
+				text-decoration: none;
+				padding: 15px;
+				font-weight: bold;
+				float: left;
+			}
+		}
+	}
+}
+
+/*******************************************************/
+/*********************** HEADER ************************/
+/*******************************************************/
+
+.intro {
+	background: url("../images/intro-background.jpg") no-repeat 0% 40%;
+	background-size: cover;
+	height: 90vh;
+	
+	.intro-text {
+		color: $yellow;
+		position: absolute;
+		top: 40%;
+		width: 60%;
+		left: 20%
+		
+		p {
+			margin: 0;
+			font-size: 14pt;
+			text-align: center;
+			font-family: "Verlag A", "Verlag B";
+			text-transform: uppercase;
+		}
+	}
+	
+	.top-logo {
+		position: absolute;
+		top: 11%;
+		left: 46%;
+		width: 8%;
+	}
+	
+	.mid-logo {
+		position: absolute;
+		top: 50%;
+		left: 37.5%;
+		width: 25%;
+	}
+	
+	button {
+		position: absolute;
+		top: 70%;
+    	left: 40%;
+    	width: 20%;
+		height: 75px;
+		background: $red;
+		border: none;
+		text-align: center;
+		
+		a {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+}
+
+/*******************************************************/
+/*********************** WELCOME ***********************/
+/*******************************************************/
+
+.welcome {
+	background: $turquoise;
+	
+	.top-content {
+		text-transform: uppercase;
+		background: $red;
+		font-size: 10pt;
+		font-weight: bold;
+	}
+	
+	.ready-text {
+		display: none;
+	}
+
+	.welcome-content {
+		margin: 0 auto;
+		width: 42%;
+		color: $black;
+		
+		h2 {
+			display: none;
+		}
+		
+		p {
+			padding: 0;
+		}
+		
+		.intro-text {
+			padding-top: 4em;
+			padding-bottom: 1em;
+			font-size: 20pt;
+			font-weight: bold;
+			line-height: 40px;
+		}
+		
+		.info-text {
+			padding-top: 0.5em;
+			font-size: 14pt;
+		}
+		
+		.end-text {
+			padding-top: 2em;
+			padding-bottom: 4em;
+			font-size: 14pt;
+		}
+		
+		.arrow-down {
+			background: $white;
+			width: 150px;
+			height: 150px;
+		}
+	}
+}
+
+/*******************************************************/
+/************************* TIPS ************************/
+/*******************************************************/
+
+.tips {
+	
+	.tips-text {
+		display: none;
+	}
+	
+
+	
+	.tips-content {
+		background: url("../images/tempimg.jpg") no-repeat center;
+		background-size: cover;
+		display: inline-block;
+		height: 350px;
+		width: 33.33%;
+		color: $white;
+		
+		&:hover:nth-of-type(1) {
+			background: $black;
+			
+			.text-box {
+				display: inline-block;
+				margin-top: -35px;
+			}
+		}
+		
+		&:hover:nth-of-type(2) {
+			background: $red;
+		}
+		
+		&:hover:nth-of-type(3) {
+			background: $yellow;
+		}
+		
+		&:hover:nth-of-type(4) {
+			background: $turquoise;
+		}
+		
+		&:hover:nth-of-type(5) {
+			background: $white;
+		}
+		
+		&:hover:nth-of-type(6) {
+			background: $red;
+		}
+		
+		.number-box {
+			position: relative;
+			top: 0%;
+			text-align: center;
+			font-size: 20pt;
+			font-family: "Verlag A", "Verlag B";
+			background: $red;
+			width: 40px;
+			height: 40px;
+		}
+		
+		.text-box {
+			display: none;
+		}
+	}
+}
+
+/*******************************************************/
+/********************** INSTAGRAM **********************/
+/*******************************************************/
+
+.instagram-feed {
+	background: $black;
+	
+	.top-content {
+		
+		.hashtag-info {
+			text-transform: uppercase;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			color: $red;
+			text-align: center;
+		}
+		
+		.image-feed {
+			background: $white;
+			height: 20vh;
+		}
+		
+		.about-text {
+			color: $white;
+			margin: 0 auto;
+			line-height: 20px;
+			padding: 5%;
+		}
+	}
+}
+
+/*******************************************************/
+/************************ DATES ************************/
+/*******************************************************/
+
+.dates-content {
+	background: $yellow;
+	
+	a {
+		text-decoration: none;
+		color: $black;
+	}
+	
+	p {
+		font-size: 20pt;
+		padding: 10%;
+		text-transform: uppercase;
+		line-height: 35px;
+	}
+
+}
+
+
+
+/*******************************************************/
+/*********************** FOOTER ************************/
+/*******************************************************/
+
+.footer-content {
+	background: $red;
+	height: 70vh;
+	
+	h2 {
+		padding-top: 2em;
+		text-align: center;
+		margin: 0 auto;
+		color: $white;
+	}
+	
+	.logo-vinnovera {
+		position: absolute;
+		margin-top: 3em;
+		width: 80%;
+		left: 10%;
+	}
+}
