@@ -184,7 +184,165 @@ body {
 body p {
   margin: 0;
 }
+.dates {
+  background: #edd400;
+  width: 100%;
+}
 @media screen and (max-width: 640px) {
+  .main-menu {
+    display: none;
+  }
+  .intro {
+    background: url("../images/intro-background.jpg") no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    padding-top: 1em;
+  }
+  .intro .intro-text {
+    color: #edd400;
+    position: absolute;
+    top: 20%;
+    width: 60%;
+    left: 20%;
+  }
+  .intro .intro-text p {
+    margin: 0;
+    font-size: 14pt;
+    text-align: center;
+    font-family: "Verlag A", "Verlag B";
+    text-transform: uppercase;
+  }
+  .intro .top-logo {
+    position: absolute;
+    top: 2%;
+    left: 35%;
+    width: 30%;
+  }
+  .intro .mid-logo {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 80%;
+  }
+  .intro button {
+    display: none;
+  }
+  .welcome {
+    background: #000;
+  }
+  .welcome .top-content {
+    text-transform: uppercase;
+    background: #ff453e;
+    font-size: 10pt;
+    font-weight: bold;
+  }
+  .welcome .ready-text {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .welcome .welcome-content {
+    color: #fff;
+  }
+  .welcome .welcome-content h2 {
+    color: #b0f7e7;
+    padding: 5%;
+    margin: 0;
+  }
+  .welcome .welcome-content p {
+    padding: 5% 5%;
+  }
+  .tips {
+    background: #ff453e;
+  }
+  .tips .tips-text {
+    color: #fff;
+    padding: 20px;
+    font-size: 30pt;
+    font-family: "Verlag A", "Verlag B";
+  }
+  .tips .tips-content {
+    background: url("../images/tempimg.jpg") no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    margin: 5%;
+    height: 200px;
+    width: 90%;
+    color: #fff;
+  }
+  .tips .tips-content .number-box {
+    position: relative;
+    top: 60%;
+    margin-left: -15px;
+    text-align: center;
+    font-size: 20pt;
+    font-family: "Verlag A", "Verlag B";
+    background: #000;
+    width: 35px;
+    height: 35px;
+  }
+  .tips .tips-content .text-box {
+    position: relative;
+    float: right;
+    margin-right: 98px;
+    top: 42.2%;
+    width: 140px;
+    font-size: 15pt;
+    height: 35px;
+    background: #ff453e;
+    color: #fff;
+  }
+  .instagram-feed {
+    background: #000;
+  }
+  .instagram-feed .top-content .hashtag-info {
+    text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #ff453e;
+    text-align: center;
+  }
+  .instagram-feed .top-content .image-feed {
+    background: #fff;
+    height: 20vh;
+  }
+  .instagram-feed .top-content .about-text {
+    color: #fff;
+    margin: 0 auto;
+    line-height: 20px;
+    padding: 5%;
+  }
+  .dates-content {
+    background: #edd400;
+  }
+  .dates-content a {
+    text-decoration: none;
+    color: #000;
+  }
+  .dates-content p {
+    font-size: 20pt;
+    padding: 10%;
+    text-transform: uppercase;
+    line-height: 35px;
+  }
+  .footer-content {
+    background: #ff453e;
+    height: 70vh;
+  }
+  .footer-content h2 {
+    padding-top: 2em;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+  .footer-content .logo-vinnovera {
+    position: absolute;
+    margin-top: 3em;
+    width: 80%;
+    left: 10%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
   .main-menu {
     display: none;
   }
@@ -411,6 +569,8 @@ body p {
   }
   .welcome {
     background: #b0f7e7;
+    padding-bottom: 4em;
+    padding-top: 4em;
   }
   .welcome .top-content {
     text-transform: uppercase;
@@ -433,7 +593,6 @@ body p {
     padding: 0;
   }
   .welcome .welcome-content .intro-text {
-    padding-top: 4em;
     padding-bottom: 1em;
     font-size: 20pt;
     font-weight: bold;
@@ -449,9 +608,21 @@ body p {
     font-size: 14pt;
   }
   .welcome .welcome-content .arrow-down {
-    background: #fff;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+  }
+  .welcome .welcome-content .arrowdown-text {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+    line-height: 40px;
+    width: 60%;
   }
   .tips .tips-text {
     display: none;
@@ -463,28 +634,35 @@ body p {
     height: 350px;
     width: 33.33%;
     color: #fff;
+    overflow: hidden;
+    margin-bottom: -0.2em;
+/*&:hover:nth-of-type(2) {
+			background: $red;
+		}
+		
+		&:hover:nth-of-type(3) {
+			background: $yellow;
+		}
+		
+		&:hover:nth-of-type(4) {
+			background: $turquoise;
+		}
+		
+		&:hover:nth-of-type(5) {
+			background: $white;
+		}
+		
+		&:hover:nth-of-type(6) {
+			background: $red;
+		}*/
   }
-  .tips .tips-content:hover:nth-of-type(1) {
-    background: #000;
-  }
-  .tips .tips-content:hover:nth-of-type(1) .text-box {
-    display: inline-block;
-    margin-top: -35px;
-  }
-  .tips .tips-content:hover:nth-of-type(2) {
+  .tips .tips-content:hover {
     background: #ff453e;
   }
-  .tips .tips-content:hover:nth-of-type(3) {
-    background: #edd400;
-  }
-  .tips .tips-content:hover:nth-of-type(4) {
-    background: #b0f7e7;
-  }
-  .tips .tips-content:hover:nth-of-type(5) {
-    background: #fff;
-  }
-  .tips .tips-content:hover:nth-of-type(6) {
-    background: #ff453e;
+  .tips .tips-content:hover .text-box {
+    display: inline;
+    position: relative;
+    text-align: center;
   }
   .tips .tips-content .number-box {
     position: relative;
@@ -497,30 +675,51 @@ body p {
     height: 40px;
   }
   .tips .tips-content .text-box {
+    position: relative;
+    text-align: center;
+    top: 30%;
     display: none;
   }
   .instagram-feed {
     background: #000;
+    height: 60vh;
+    width: 100%;
   }
-  .instagram-feed .top-content .hashtag-info {
+  .instagram-feed .top-content {
+    width: 100%;
+  }
+  .instagram-feed .top-content .about-info {
+    float: left;
+    width: 40%;
+  }
+  .instagram-feed .top-content .about-info .about-text {
+    color: #fff;
+    padding: 4em;
+    font-size: 1.8em;
+  }
+  .instagram-feed .top-content .hashtag-box {
+    width: 60%;
+    float: right;
+  }
+  .instagram-feed .top-content .hashtag-box .hashtag-info {
+    float: right;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 100%;
     text-transform: uppercase;
     padding-top: 1em;
     padding-bottom: 1em;
     color: #ff453e;
-    text-align: center;
   }
   .instagram-feed .top-content .image-feed {
+    float: right;
+    width: 60%;
     background: #fff;
-    height: 20vh;
-  }
-  .instagram-feed .top-content .about-text {
-    color: #fff;
-    margin: 0 auto;
-    line-height: 20px;
-    padding: 5%;
+    height: 40vh;
   }
   .dates-content {
-    background: #edd400;
+    margin: 0 auto;
+    width: 50%;
   }
   .dates-content a {
     text-decoration: none;
@@ -534,18 +733,24 @@ body p {
   }
   .footer-content {
     background: #ff453e;
-    height: 70vh;
+    height: 40vh;
   }
   .footer-content h2 {
-    padding-top: 2em;
+    padding-top: 4em;
     text-align: center;
     margin: 0 auto;
     color: #fff;
   }
+  .footer-content .logo-smicker {
+    position: absolute;
+    margin-top: 3em;
+    width: 15%;
+    left: 35%;
+  }
   .footer-content .logo-vinnovera {
     position: absolute;
     margin-top: 3em;
-    width: 80%;
-    left: 10%;
+    width: 15%;
+    left: 55%;
   }
 }
