@@ -385,38 +385,54 @@ body p {
     display: none;
   }
   .intro {
-    background: url("../images/intro-background.jpg") no-repeat center;
+    background: url("../images/intro-background.jpg") no-repeat 50%;
     background-size: cover;
     height: 90vh;
     padding-top: 1em;
   }
-  .intro .intro-text {
-    color: #edd400;
-    position: absolute;
-    top: 20%;
-    width: 60%;
-    left: 20%;
+  .intro .intro-content {
+    width: 100%;
+    position: relative;
+    height: 100%;
   }
-  .intro .intro-text p {
-    margin: 0;
-    font-size: 14pt;
+  .intro .intro-content .top-logo {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro .intro-content .mid-logo {
+    width: 70%;
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .intro .intro-content .intro-text {
+    padding: 22% 11% 0% 11%;
     text-align: center;
-    font-family: "Verlag A", "Verlag B";
-    text-transform: uppercase;
+    font-size: 22pt;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #edd400;
+    font-style: italic;
+    font-weight: bold;
   }
-  .intro .top-logo {
-    position: absolute;
-    top: 2%;
-    left: 35%;
-    width: 30%;
+  .intro .intro-content .intro-text-bottom {
+    padding: 2%;
+    font-size: 22pt;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #edd400;
+    font-style: italic;
+    font-weight: bold;
   }
-  .intro .mid-logo {
-    position: absolute;
-    top: 45%;
-    left: 10%;
-    width: 80%;
-  }
-  .intro button {
+  .intro .intro-content button {
     display: none;
   }
   .welcome {
@@ -425,7 +441,7 @@ body p {
   .welcome .top-content {
     text-transform: uppercase;
     background: #ff453e;
-    font-size: 10pt;
+    font-size: 18pt;
     font-weight: bold;
   }
   .welcome .ready-text {
@@ -435,19 +451,30 @@ body p {
   }
   .welcome .welcome-content {
     color: #fff;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }
   .welcome .welcome-content h2 {
+    font-size: 33pt;
     color: #b0f7e7;
     padding: 5%;
     margin: 0;
   }
   .welcome .welcome-content p {
-    padding: 5% 5%;
+    padding: 0% 5% 3% 5%;
+    font-size: 15pt;
+  }
+  .welcome .welcome-content .arrow-down {
+    display: none;
+  }
+  .welcome .welcome-content .arrowdown-text {
+    display: none;
   }
   .tips {
     background: #ff453e;
   }
   .tips .tips-text {
+    text-align: center;
     color: #fff;
     padding: 20px;
     font-size: 30pt;
@@ -458,37 +485,53 @@ body p {
     background-size: cover;
     display: inline-block;
     margin: 5%;
-    height: 200px;
+    height: 400px;
     width: 90%;
     color: #fff;
   }
   .tips .tips-content .number-box {
+    display: block;
     position: relative;
     top: 60%;
-    margin-left: -15px;
+    margin-left: -38px;
     text-align: center;
-    font-size: 20pt;
+    font-size: 29pt;
     font-family: "Verlag A", "Verlag B";
     background: #000;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
   }
   .tips .tips-content .text-box {
     position: relative;
-    float: right;
-    margin-right: 98px;
-    top: 42.2%;
-    width: 140px;
+    float: left;
+    margin-left: 50px;
+    top: 47.2%;
+    width: 200px;
     font-size: 15pt;
-    height: 35px;
+    height: 50px;
     background: #ff453e;
     color: #fff;
+  }
+  .tips .tips-content .text-box .play {
+    margin: 5px 8px;
+    background: #ff453e;
+    float: left;
+    border-top: 20px solid transparent;
+    border-left: 22px solid #fff;
+    border-bottom: 20px solid transparent;
+  }
+  .tips .tips-content .text-box p {
+    float: left;
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 5px;
   }
   .instagram-feed {
     background: #000;
   }
   .instagram-feed .top-content .hashtag-info {
     text-transform: uppercase;
+    font-size: 30pt;
     padding-top: 1em;
     padding-bottom: 1em;
     color: #ff453e;
@@ -496,42 +539,49 @@ body p {
   }
   .instagram-feed .top-content .image-feed {
     background: #fff;
-    height: 20vh;
+    height: 40vh;
   }
   .instagram-feed .top-content .about-text {
+    font-size: 36pt;
     color: #fff;
     margin: 0 auto;
-    line-height: 20px;
+    line-height: 60px;
     padding: 5%;
-  }
-  .dates-content {
-    background: #edd400;
   }
   .dates-content a {
     text-decoration: none;
     color: #000;
   }
   .dates-content p {
-    font-size: 20pt;
+    font-size: 35pt;
     padding: 10%;
     text-transform: uppercase;
-    line-height: 35px;
+    line-height: 60px;
   }
   .footer-content {
     background: #ff453e;
-    height: 70vh;
+    height: 80vh;
   }
   .footer-content h2 {
+    font-size: 28pt;
     padding-top: 2em;
     text-align: center;
     margin: 0 auto;
     color: #fff;
   }
+  .footer-content .logo-smicker {
+    display: block;
+    margin-top: 6em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .footer-content .logo-vinnovera {
-    position: absolute;
+    display: block;
     margin-top: 3em;
-    width: 80%;
-    left: 10%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 769px) {
@@ -561,47 +611,65 @@ body p {
     float: left;
   }
   .intro {
-    background: url("../images/intro-background.jpg") no-repeat 0% 40%;
+    background: url("../images/intro-background.jpg") no-repeat 100% 37%;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
+    padding-top: 1em;
   }
-  .intro .intro-text {
-    color: #edd400;
-    position: absolute;
-    top: 40%;
-    width: 60%;
-    left: 20%;
+  .intro .intro-content {
+    width: 100%;
+    position: relative;
+    height: 100%;
   }
-  .intro .intro-text p {
-    margin: 0;
-    font-size: 14pt;
+  .intro .intro-content .top-logo {
+    width: 120px;
+    padding-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro .intro-content .mid-logo {
+    width: 40%;
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .intro .intro-content .intro-text {
+    padding: 6% 11% 0% 11%;
+    font-size: 24pt;
     text-align: center;
-    font-family: "Verlag A", "Verlag B";
-    text-transform: uppercase;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #edd400;
+    font-style: italic;
+    font-weight: bold;
   }
-  .intro .top-logo {
-    position: absolute;
-    top: 11%;
-    left: 46%;
-    width: 8%;
+  .intro .intro-content .intro-text-bottom {
+    padding: 2%;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #edd400;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24pt;
   }
-  .intro .mid-logo {
-    position: absolute;
-    top: 50%;
-    left: 37.5%;
-    width: 25%;
-  }
-  .intro button {
-    position: absolute;
-    top: 70%;
-    left: 40%;
-    width: 20%;
+  .intro .intro-content button {
+    display: block;
+    width: 250px;
     height: 75px;
+    margin-left: auto;
+    margin-right: auto;
     background: #ff453e;
     border: none;
     text-align: center;
   }
-  .intro button a {
+  .intro .intro-content button a {
     color: #000;
     text-decoration: none;
   }
@@ -669,7 +737,7 @@ body p {
     background: url("../images/tempimg.jpg") no-repeat center;
     background-size: cover;
     display: inline-block;
-    height: 350px;
+    height: 400px;
     width: 33.33%;
     color: #fff;
     overflow: hidden;
@@ -698,25 +766,40 @@ body p {
     background: #ff453e;
   }
   .tips .tips-content:hover .text-box {
-    display: inline;
-    position: relative;
-    text-align: center;
+    display: block;
   }
   .tips .tips-content .number-box {
     position: relative;
     top: 0%;
     text-align: center;
-    font-size: 20pt;
+    font-size: 27pt;
     font-family: "Verlag A", "Verlag B";
     background: #ff453e;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   .tips .tips-content .text-box {
+    display: none;
     position: relative;
     text-align: center;
-    top: 30%;
-    display: none;
+    top: 25%;
+    left: 25%;
+    width: 100%;
+    height: 50px;
+  }
+  .tips .tips-content .text-box .play {
+    background: #ff453e;
+    float: left;
+    border-top: 25px solid transparent;
+    border-left: 35px solid #fff;
+    border-bottom: 25px solid transparent;
+  }
+  .tips .tips-content .text-box .tips-box-text {
+    float: left;
+    font-size: 20pt;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 10px;
   }
   .instagram-feed {
     background: #000;
@@ -732,7 +815,7 @@ body p {
   }
   .instagram-feed .top-content .about-info .about-text {
     color: #fff;
-    padding: 4em;
+    padding: 5%;
     font-size: 1.8em;
   }
   .instagram-feed .top-content .hashtag-box {
@@ -757,13 +840,27 @@ body p {
   }
   .dates-content {
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
   }
   .dates-content a {
     text-decoration: none;
     color: #000;
   }
-  .dates-content p {
+  .dates-content .info-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-size: 20pt;
+    padding: 10%;
+    text-transform: uppercase;
+    line-height: 35px;
+  }
+  .dates-content .link-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
     font-size: 20pt;
     padding: 10%;
     text-transform: uppercase;
