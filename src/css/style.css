@@ -198,51 +198,46 @@ body p {
     height: 80vh;
     padding-top: 1em;
   }
-  .intro .intro-text {
+  .intro .intro-content {
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }
+  .intro .intro-content .top-logo {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro .intro-content .mid-logo {
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .intro .intro-content .intro-text {
+    padding: 18% 11% 0% 11%;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     color: #edd400;
-    position: absolute;
     font-style: italic;
     font-weight: bold;
-    top: 36%;
-    width: 70%;
-    left: 15%;
   }
-  .intro .intro-text p {
-    margin: 0;
-    font-size: 12pt;
+  .intro .intro-content .intro-text-bottom {
+    padding: 2%;
     text-align: center;
-    font-family: "Verlag A", "Verlag B";
-    text-transform: uppercase;
-  }
-  .intro .intro-text-bottom {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     color: #edd400;
-    position: absolute;
     font-style: italic;
     font-weight: bold;
-    top: 55%;
-    width: 70%;
-    left: 15%;
   }
-  .intro .intro-text-bottom p {
-    margin: 0;
-    font-size: 12pt;
-    text-align: center;
-    font-family: "Verlag A", "Verlag B";
-    text-transform: uppercase;
-  }
-  .intro .top-logo {
-    position: absolute;
-    top: 5%;
-    left: 30%;
-    width: 40%;
-  }
-  .intro .mid-logo {
-    position: absolute;
-    top: 42%;
-    left: 10%;
-    width: 80%;
-  }
-  .intro button {
+  .intro .intro-content button {
     display: none;
   }
   .welcome {
@@ -292,9 +287,10 @@ body p {
     color: #fff;
   }
   .tips .tips-content .number-box {
+    display: block;
     position: relative;
     top: 60%;
-    margin-left: -15px;
+    margin-left: -19px;
     text-align: center;
     font-size: 20pt;
     font-family: "Verlag A", "Verlag B";
@@ -304,14 +300,27 @@ body p {
   }
   .tips .tips-content .text-box {
     position: relative;
-    float: right;
-    margin-right: 98px;
-    top: 42.2%;
+    float: left;
+    margin-left: 50px;
+    top: 43.2%;
     width: 140px;
     font-size: 15pt;
     height: 35px;
     background: #ff453e;
     color: #fff;
+  }
+  .tips .tips-content .text-box .play {
+    margin: 8px;
+    background: #ff453e;
+    float: left;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #fff;
+    border-bottom: 10px solid transparent;
+  }
+  .tips .tips-content .text-box p {
+    float: left;
+    text-align: center;
+    margin-top: 5px;
   }
   .instagram-feed {
     background: #000;
@@ -325,7 +334,7 @@ body p {
   }
   .instagram-feed .top-content .image-feed {
     background: #fff;
-    height: 20vh;
+    height: 40vh;
   }
   .instagram-feed .top-content .about-text {
     color: #fff;
@@ -348,7 +357,7 @@ body p {
   }
   .footer-content {
     background: #ff453e;
-    height: 70vh;
+    height: 80vh;
   }
   .footer-content h2 {
     padding-top: 2em;
