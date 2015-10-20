@@ -738,10 +738,11 @@ body p {
     background-size: cover;
     display: inline-block;
     height: 400px;
-    width: 33.33%;
+    width: calc(100% / 3);
     color: #fff;
     overflow: hidden;
     margin-bottom: -0.2em;
+    margin-right: -0.2em;
 /*&:hover:nth-of-type(2) {
 			background: $red;
 		}
