@@ -1,0 +1,24 @@
+{
+  "name": "ensvenskfilmklassiker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "estrad": "^0.1.4",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gewfy@github.com/Vinnovera/ensvenskfilmklassiker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vinnovera/ensvenskfilmklassiker/issues"
+  },
+  "homepage": "https://github.com/Vinnovera/ensvenskfilmklassiker#readme"
+}
