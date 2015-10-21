@@ -106,11 +106,12 @@
 }
 
 /*******************************************************/
-/************************* TIPS ************************/
+/********************* SINGLE TIPS *********************/
 /*******************************************************/
 
-.tips {
+.tip {
 	background: $red;
+	padding-bottom: 2em;
 	
 	.tips-text {
 		color: $white;
@@ -119,14 +120,39 @@
 		font-family: "Verlag A", "Verlag B";
 	}
 	
-	.tips-content {
-		background: url("../images/tempimg.jpg") no-repeat center;
+	.tip-teaser {
+		background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
 		background-size: cover;
 		display: inline-block;
 		margin: 5%;
 		height: 200px;
 		width: 90%;
 		color: $white;
+		
+		&:nth-of-type(2) {
+			background: url("../images/stills/marianne_graten_raw_still_v1.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		&:nth-of-type(3) {
+			background: url("../images/stills/derrick_skracken_raw_still_v1.jpg ") no-repeat center;
+			background-size: cover;
+		}
+		
+		&:nth-of-type(4) {
+			background: url("../images/stills/marianne_ilskan_raw_still_v1.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		&:nth-of-type(5) {
+			background: url("../images/stills/micke_stressen_raw_still_v1.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		&:nth-of-type(6) {
+			background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
+			background-size: cover;
+		}
 		
 		.number-box {
 			display: block;
@@ -162,14 +188,89 @@
 			}
 			
 			p {
+				text-transform: uppercase;
 				float: left;
 				text-align: center;
 				margin-top: 5px;
 
 			}
 		}
+
+	}
+	
+	.tip-content {
+		background: $yellow;
+		display none
+		
+		&.open{
+			display block
+			position: relative;
+			margin-top: -230px;
+    		z-index: 0;
+		}
+		
+		.youtube-content {
+			background: $white;
+			height: 180px;
+		}
+		
+		.tip1-content {
+			padding: 1em;
+			
+			.movie-tips {
+
+				h2 {
+					font-size: 12pt;
+					text-transform: uppercase;
+					border-bottom 2px solid $black;
+					line-height: 40px;
+				}
+				
+				.movie-posters {
+					outline: 1px solid $black;
+					height: 180px;
+
+				}
+			}
+			
+			.share-tip {
+				padding-top: 2em;
+				
+				h2 {
+					font-size: 12pt;
+					text-transform: uppercase;
+				}
+				
+				input {
+					border: none;
+					border-radius: 2px;
+					height: 28px;
+					width: 140px;
+				}
+				
+				input::-webkit-input-placeholder { /* WebKit browsers */
+  					padding-left: 0.5em;
+				}
+				
+				.socialmedia-icons {
+					float: right;
+					margin-top: -5px;
+					
+					img {
+						width: 35px;
+						height: 35px;
+						padding: 3px 5px 3px 3px;
+					}
+				}
+			}
+		}
 	}
 }
+
+.hidden {
+	display: none;
+}
+
 
 /*******************************************************/
 /********************** INSTAGRAM **********************/

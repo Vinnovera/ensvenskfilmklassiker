@@ -268,17 +268,18 @@ body p {
   .welcome .welcome-content .arrow-down {
     display: none;
   }
-  .tips {
+  .tip {
     background: #ff453e;
+    padding-bottom: 2em;
   }
-  .tips .tips-text {
+  .tip .tips-text {
     color: #fff;
     padding: 20px;
     font-size: 30pt;
     font-family: "Verlag A", "Verlag B";
   }
-  .tips .tips-content {
-    background: url("../images/tempimg.jpg") no-repeat center;
+  .tip .tip-teaser {
+    background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
     display: inline-block;
     margin: 5%;
@@ -286,7 +287,27 @@ body p {
     width: 90%;
     color: #fff;
   }
-  .tips .tips-content .number-box {
+  .tip .tip-teaser:nth-of-type(2) {
+    background: url("../images/stills/marianne_graten_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tip .tip-teaser:nth-of-type(3) {
+    background: url("../images/stills/derrick_skracken_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tip .tip-teaser:nth-of-type(4) {
+    background: url("../images/stills/marianne_ilskan_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tip .tip-teaser:nth-of-type(5) {
+    background: url("../images/stills/micke_stressen_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tip .tip-teaser:nth-of-type(6) {
+    background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tip .tip-teaser .number-box {
     display: block;
     position: relative;
     top: 60%;
@@ -298,7 +319,7 @@ body p {
     width: 35px;
     height: 35px;
   }
-  .tips .tips-content .text-box {
+  .tip .tip-teaser .text-box {
     position: relative;
     float: left;
     margin-left: 50px;
@@ -309,7 +330,7 @@ body p {
     background: #ff453e;
     color: #fff;
   }
-  .tips .tips-content .text-box .play {
+  .tip .tip-teaser .text-box .play {
     margin: 8px;
     background: #ff453e;
     float: left;
@@ -317,10 +338,67 @@ body p {
     border-left: 15px solid #fff;
     border-bottom: 10px solid transparent;
   }
-  .tips .tips-content .text-box p {
+  .tip .tip-teaser .text-box p {
+    text-transform: uppercase;
     float: left;
     text-align: center;
     margin-top: 5px;
+  }
+  .tip .tip-content {
+    background: #edd400;
+    display: none;
+  }
+  .tip .tip-content.open {
+    display: block;
+    position: relative;
+    margin-top: -230px;
+    z-index: 0;
+  }
+  .tip .tip-content .youtube-content {
+    background: #fff;
+    height: 180px;
+  }
+  .tip .tip-content .tip1-content {
+    padding: 1em;
+  }
+  .tip .tip-content .tip1-content .movie-tips h2 {
+    font-size: 12pt;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    line-height: 40px;
+  }
+  .tip .tip-content .tip1-content .movie-tips .movie-posters {
+    outline: 1px solid #000;
+    height: 180px;
+  }
+  .tip .tip-content .tip1-content .share-tip {
+    padding-top: 2em;
+  }
+  .tip .tip-content .tip1-content .share-tip h2 {
+    font-size: 12pt;
+    text-transform: uppercase;
+  }
+  .tip .tip-content .tip1-content .share-tip input {
+    border: none;
+    border-radius: 2px;
+    height: 28px;
+    width: 140px;
+  }
+  .tip .tip-content .tip1-content .share-tip input::-webkit-input-placeholder {
+/* WebKit browsers */
+    padding-left: 0.5em;
+  }
+  .tip .tip-content .tip1-content .share-tip .socialmedia-icons {
+    float: right;
+    margin-top: -5px;
+  }
+  .tip .tip-content .tip1-content .share-tip .socialmedia-icons img {
+    width: 35px;
+    height: 35px;
+    padding: 3px 5px 3px 3px;
+  }
+  .hidden {
+    display: none;
   }
   .instagram-feed {
     background: #000;
@@ -387,8 +465,8 @@ body p {
   .intro {
     background: url("../images/intro-background.jpg") no-repeat 50%;
     background-size: cover;
-    height: 90vh;
     padding-top: 1em;
+    padding-bottom: 4em;
   }
   .intro .intro-content {
     width: 100%;
@@ -481,13 +559,33 @@ body p {
     font-family: "Verlag A", "Verlag B";
   }
   .tips .tips-content {
-    background: url("../images/tempimg.jpg") no-repeat center;
+    background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
     display: inline-block;
     margin: 5%;
     height: 400px;
     width: 90%;
     color: #fff;
+  }
+  .tips .tips-content:nth-of-type(2) {
+    background: url("../images/stills/marianne_graten_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tips .tips-content:nth-of-type(3) {
+    background: url("../images/stills/derrick_skracken_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tips .tips-content:nth-of-type(4) {
+    background: url("../images/stills/marianne_ilskan_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tips .tips-content:nth-of-type(5) {
+    background: url("../images/stills/micke_stressen_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tips .tips-content:nth-of-type(6) {
+    background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
   }
   .tips .tips-content .number-box {
     display: block;
@@ -604,22 +702,22 @@ body p {
     margin-right: 1%;
   }
   .main-menu ul li a {
+    font-family: "Knockout 48 A", "Knockout 48 B";
+    font-size: 18pt;
+    text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-    padding: 15px;
-    font-weight: bold;
+    padding: 10px;
     float: left;
   }
   .intro {
     background: url("../images/intro-background.jpg") no-repeat 100% 37%;
     background-size: cover;
-    height: 100vh;
     padding-top: 1em;
+    padding-bottom: 4em;
   }
   .intro .intro-content {
     width: 100%;
-    position: relative;
-    height: 100%;
   }
   .intro .intro-content .top-logo {
     width: 120px;
@@ -638,7 +736,7 @@ body p {
     right: 0;
   }
   .intro .intro-content .intro-text {
-    padding: 6% 11% 0% 11%;
+    padding: 12% 11% 0% 11%;
     font-size: 24pt;
     text-align: center;
     width: 70%;
@@ -670,6 +768,9 @@ body p {
     text-align: center;
   }
   .intro .intro-content button a {
+    font-family: "Knockout 48 A", "Knockout 48 B";
+    text-transform: uppercase;
+    font-size: 18pt;
     color: #000;
     text-decoration: none;
   }
@@ -734,7 +835,7 @@ body p {
     display: none;
   }
   .tips .tips-content {
-    background: url("../images/tempimg.jpg") no-repeat center;
+    background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
     display: inline-block;
     height: 400px;
@@ -743,25 +844,26 @@ body p {
     overflow: hidden;
     margin-bottom: -0.2em;
     margin-right: -0.2em;
-/*&:hover:nth-of-type(2) {
-			background: $red;
-		}
-		
-		&:hover:nth-of-type(3) {
-			background: $yellow;
-		}
-		
-		&:hover:nth-of-type(4) {
-			background: $turquoise;
-		}
-		
-		&:hover:nth-of-type(5) {
-			background: $white;
-		}
-		
-		&:hover:nth-of-type(6) {
-			background: $red;
-		}*/
+  }
+  .tips .tips-content:nth-of-type(2) {
+    background: url("../images/stills/marianne_graten_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tips .tips-content:nth-of-type(3) {
+    background: url("../images/stills/derrick_skracken_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tips .tips-content:nth-of-type(4) {
+    background: url("../images/stills/marianne_ilskan_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tips .tips-content:nth-of-type(5) {
+    background: url("../images/stills/micke_stressen_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .tips .tips-content:nth-of-type(6) {
+    background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
+    background-size: cover;
   }
   .tips .tips-content:hover {
     background: #ff453e;

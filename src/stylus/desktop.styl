@@ -21,10 +21,12 @@
 			margin-right: 1%;
 			
 			a {
+				font-family: "Knockout 48 A", "Knockout 48 B";
+				font-size: 18pt;
+				text-transform: uppercase;
 				color: $white;
 				text-decoration: none;
-				padding: 15px;
-				font-weight: bold;
+				padding: 10px;
 				float: left;
 			}
 		}
@@ -38,13 +40,13 @@
 .intro {
 background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 	background-size: cover;
-	height: 100vh;
+
 	padding-top: 1em;
+	padding-bottom: 4em;
 	
 	.intro-content {
 		width: 100%;
-		position: relative;
-		height: 100%;
+
 
 		.top-logo {
 			width: 120px;
@@ -65,7 +67,7 @@ background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 		}
 		
 		.intro-text {
-			padding: 6% 11% 0% 11%;
+			padding: 12% 11% 0% 11%;
 			font-size: 24pt;
 			text-align: center;
 			width: 70%;
@@ -100,6 +102,9 @@ background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 			text-align: center;
 		
 			a {
+				font-family: "Knockout 48 A", "Knockout 48 B";
+				text-transform: uppercase;
+				font-size: 18pt;
 				color: $black;
 				text-decoration: none;
 			}
@@ -191,7 +196,7 @@ background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 	}
 	
 	.tips-content {
-		background: url("../images/tempimg.jpg") no-repeat center;
+		background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
 		background-size: cover;
 		display: inline-block;
 		height: 400px;
@@ -201,6 +206,30 @@ background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 		margin-bottom: -.2em;
 		margin-right: -.2em;
 
+		&:nth-of-type(2) {
+			background: url("../images/stills/marianne_graten_raw_still_v1.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		&:nth-of-type(3) {
+			background: url("../images/stills/derrick_skracken_raw_still_v1.jpg ") no-repeat center;
+			background-size: cover;
+		}
+		
+		&:nth-of-type(4) {
+			background: url("../images/stills/marianne_ilskan_raw_still_v1.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		&:nth-of-type(5) {
+			background: url("../images/stills/micke_stressen_raw_still_v1.jpg") no-repeat center;
+			background-size: cover;
+		}
+		
+		&:nth-of-type(6) {
+			background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
+			background-size: cover;
+		}
 		
 		&:hover {
 			background: $red;
@@ -209,26 +238,6 @@ background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 				display: block;
 			}
 		}
-		
-		/*&:hover:nth-of-type(2) {
-			background: $red;
-		}
-		
-		&:hover:nth-of-type(3) {
-			background: $yellow;
-		}
-		
-		&:hover:nth-of-type(4) {
-			background: $turquoise;
-		}
-		
-		&:hover:nth-of-type(5) {
-			background: $white;
-		}
-		
-		&:hover:nth-of-type(6) {
-			background: $red;
-		}*/
 		
 		.number-box {
 			position: relative;
