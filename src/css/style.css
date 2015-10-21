@@ -1056,11 +1056,25 @@ body p {
     padding-bottom: 1em;
     color: #ff453e;
   }
-  .instagram-feed .top-content .image-feed {
-    float: right;
-    width: 60%;
-    background: #fff;
-    height: 40vh;
+  .instagram-feed .top-content #instafeed {
+    margin: 5em auto;
+    position: relative;
+    width: 50%;
+  }
+  .instagram-feed .top-content #instafeed a {
+    float: left;
+  }
+  .instagram-feed .top-content .more-images {
+    color: #fff;
+    background: #000;
+    float: left;
+    height: 150px;
+    line-height: 150px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 150px;
   }
   .dates-content {
     margin: 0 auto;
