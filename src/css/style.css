@@ -847,6 +847,7 @@ body p {
     color: #fff;
     overflow: hidden;
     margin-bottom: -0.2em;
+    margin-right: -0.2em;
   }
   .tip .tip-teaser.thumbs {
     height: 200px;
@@ -1091,7 +1092,7 @@ body p {
   }
   .footer-content {
     background: #ff453e;
-    height: 40vh;
+    height: 50vh;
   }
   .footer-content h2 {
     padding-top: 4em;
@@ -1101,7 +1102,7 @@ body p {
   }
   .footer-content .logo-smicker {
     position: absolute;
-    margin-top: 3em;
+    margin-top: 13em;
     width: 15%;
     left: 35%;
   }
