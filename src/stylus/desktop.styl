@@ -38,7 +38,7 @@
 /*******************************************************/
 
 .intro {
-background: url("../images/intro-background.jpg") no-repeat 100% 37%;
+	background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 	background-size: cover;
 
 	padding-top: 1em;
@@ -186,16 +186,17 @@ background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 }
 
 /*******************************************************/
-/************************* TIPS ************************/
+/************************* TIP ************************/
 /*******************************************************/
 
-.tips {
+.tip {
+	background: $yellow;
 	
 	.tips-text {
 		display: none;
 	}
 	
-	.tips-content {
+	.tip-teaser {
 		background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
 		background-size: cover;
 		display: inline-block;
@@ -204,7 +205,36 @@ background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 		color: $white;
 		overflow: hidden;
 		margin-bottom: -.2em;
-		margin-right: -.2em;
+		
+		&.thumbs {
+			height: 200px;
+    		width: calc(60% / 3);
+    		
+    		.number-box {
+				font-size: 17pt;
+				width: 30px;
+				height: 30px;
+    		}
+    		
+    		.text-box {
+				top: 25%;
+				left: 25%;
+				width: 100%;
+				height: 50px;
+			
+				.play {
+				    border-top: 15px solid transparent;
+				    border-left: 25px solid $white;
+				    border-bottom: 15px solid transparent;
+				}
+				
+				.tips-box-text {
+					font-size: 15pt;
+					margin-left: 20px;
+					margin-top: 3px;
+				}	
+			}
+		}
 
 		&:nth-of-type(2) {
 			background: url("../images/stills/marianne_graten_raw_still_v1.jpg") no-repeat center;
@@ -274,6 +304,84 @@ background: url("../images/intro-background.jpg") no-repeat 100% 37%;
 				margin-left: 25px;
 				margin-top: 10px;
 			}	
+		}
+	}
+	
+	.tip-content {
+		background: $black;
+		display: none;
+		
+		&.open{
+			display inline-block
+			position: relative;
+			margin-top: -200px;
+    		z-index: 0;
+		}
+		
+		.youtube-content {
+			text-align: center;
+			background: $white;
+			height: 50vh;
+		}
+		
+		.tip1-content {
+			float: left;
+			width: 50%;
+			padding: 1em;
+			color: $white;
+			
+			.tip-howto {
+
+			}
+			
+			.movie-tips {
+				padding-bottom: 2em;
+
+				h2 {
+					font-size: 12pt;
+					text-transform: uppercase;
+					border-bottom 2px solid $black;
+					line-height: 40px;
+				}
+				
+				.movie-posters {
+					outline: 1px solid $white;
+					height: 180px;
+				}
+			}
+		}
+		
+		.share-tip {
+			float: right;
+			padding-top: 2em;
+			
+			h2 {
+				color: $white;
+				font-size: 12pt;
+				text-transform: uppercase;
+			}
+			
+			input {
+				border: none;
+				border-radius: 2px;
+				height: 28px;
+				width: 140px;
+			}
+			
+			input::-webkit-input-placeholder { /* WebKit browsers */
+					padding-left: 0.5em;
+			}
+			
+			.socialmedia-icons {
+				float: right;
+				margin-top: -5px;
+				
+				img {
+					width: 35px;
+					height: 35px;
+					padding: 3px 5px 3px 3px;
+				}
+			}
 		}
 	}
 }

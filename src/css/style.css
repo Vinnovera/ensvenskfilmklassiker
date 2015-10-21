@@ -831,10 +831,13 @@ body p {
     line-height: 40px;
     width: 60%;
   }
-  .tips .tips-text {
+  .tip {
+    background: #edd400;
+  }
+  .tip .tips-text {
     display: none;
   }
-  .tips .tips-content {
+  .tip .tip-teaser {
     background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
     display: inline-block;
@@ -843,35 +846,59 @@ body p {
     color: #fff;
     overflow: hidden;
     margin-bottom: -0.2em;
-    margin-right: -0.2em;
   }
-  .tips .tips-content:nth-of-type(2) {
+  .tip .tip-teaser.thumbs {
+    height: 200px;
+    width: calc(60% / 3);
+  }
+  .tip .tip-teaser.thumbs .number-box {
+    font-size: 17pt;
+    width: 30px;
+    height: 30px;
+  }
+  .tip .tip-teaser.thumbs .text-box {
+    top: 25%;
+    left: 25%;
+    width: 100%;
+    height: 50px;
+  }
+  .tip .tip-teaser.thumbs .text-box .play {
+    border-top: 15px solid transparent;
+    border-left: 25px solid #fff;
+    border-bottom: 15px solid transparent;
+  }
+  .tip .tip-teaser.thumbs .text-box .tips-box-text {
+    font-size: 15pt;
+    margin-left: 20px;
+    margin-top: 3px;
+  }
+  .tip .tip-teaser:nth-of-type(2) {
     background: url("../images/stills/marianne_graten_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
   }
-  .tips .tips-content:nth-of-type(3) {
+  .tip .tip-teaser:nth-of-type(3) {
     background: url("../images/stills/derrick_skracken_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
   }
-  .tips .tips-content:nth-of-type(4) {
+  .tip .tip-teaser:nth-of-type(4) {
     background: url("../images/stills/marianne_ilskan_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
   }
-  .tips .tips-content:nth-of-type(5) {
+  .tip .tip-teaser:nth-of-type(5) {
     background: url("../images/stills/micke_stressen_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
   }
-  .tips .tips-content:nth-of-type(6) {
+  .tip .tip-teaser:nth-of-type(6) {
     background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
     background-size: cover;
   }
-  .tips .tips-content:hover {
+  .tip .tip-teaser:hover {
     background: #ff453e;
   }
-  .tips .tips-content:hover .text-box {
+  .tip .tip-teaser:hover .text-box {
     display: block;
   }
-  .tips .tips-content .number-box {
+  .tip .tip-teaser .number-box {
     position: relative;
     top: 0%;
     text-align: center;
@@ -881,7 +908,7 @@ body p {
     width: 50px;
     height: 50px;
   }
-  .tips .tips-content .text-box {
+  .tip .tip-teaser .text-box {
     display: none;
     position: relative;
     text-align: center;
@@ -890,19 +917,81 @@ body p {
     width: 100%;
     height: 50px;
   }
-  .tips .tips-content .text-box .play {
+  .tip .tip-teaser .text-box .play {
     background: #ff453e;
     float: left;
     border-top: 25px solid transparent;
     border-left: 35px solid #fff;
     border-bottom: 25px solid transparent;
   }
-  .tips .tips-content .text-box .tips-box-text {
+  .tip .tip-teaser .text-box .tips-box-text {
     float: left;
     font-size: 20pt;
     text-align: center;
     margin-left: 25px;
     margin-top: 10px;
+  }
+  .tip .tip-content {
+    background: #000;
+    display: none;
+  }
+  .tip .tip-content.open {
+    display: inline-block;
+    position: relative;
+    margin-top: -200px;
+    z-index: 0;
+  }
+  .tip .tip-content .youtube-content {
+    text-align: center;
+    background: #fff;
+    height: 50vh;
+  }
+  .tip .tip-content .tip1-content {
+    float: left;
+    width: 50%;
+    padding: 1em;
+    color: #fff;
+  }
+  .tip .tip-content .tip1-content .movie-tips {
+    padding-bottom: 2em;
+  }
+  .tip .tip-content .tip1-content .movie-tips h2 {
+    font-size: 12pt;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    line-height: 40px;
+  }
+  .tip .tip-content .tip1-content .movie-tips .movie-posters {
+    outline: 1px solid #fff;
+    height: 180px;
+  }
+  .tip .tip-content .share-tip {
+    float: right;
+    padding-top: 2em;
+  }
+  .tip .tip-content .share-tip h2 {
+    color: #fff;
+    font-size: 12pt;
+    text-transform: uppercase;
+  }
+  .tip .tip-content .share-tip input {
+    border: none;
+    border-radius: 2px;
+    height: 28px;
+    width: 140px;
+  }
+  .tip .tip-content .share-tip input::-webkit-input-placeholder {
+/* WebKit browsers */
+    padding-left: 0.5em;
+  }
+  .tip .tip-content .share-tip .socialmedia-icons {
+    float: right;
+    margin-top: -5px;
+  }
+  .tip .tip-content .share-tip .socialmedia-icons img {
+    width: 35px;
+    height: 35px;
+    padding: 3px 5px 3px 3px;
   }
   .instagram-feed {
     background: #000;

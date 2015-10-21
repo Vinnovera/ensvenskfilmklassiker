@@ -4,6 +4,7 @@ function showTip() {
 		console.log('hello');
 		
 		$('.tip-content').toggleClass('open');
+		$('.tip-teaser').toggleClass('thumbs');
 	});
 }
 
