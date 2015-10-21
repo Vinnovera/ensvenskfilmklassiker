@@ -1027,15 +1027,14 @@ body p {
   }
   .instagram-feed {
     background: #000;
-    height: 60vh;
     width: 100%;
   }
   .instagram-feed .top-content {
     width: 100%;
   }
   .instagram-feed .top-content .about-info {
-    float: left;
-    width: 40%;
+    display: inline-block;
+    width: 20%;
   }
   .instagram-feed .top-content .about-info .about-text {
     color: #fff;
@@ -1043,11 +1042,10 @@ body p {
     font-size: 1.8em;
   }
   .instagram-feed .top-content .hashtag-box {
-    width: 60%;
-    float: right;
+    display: block;
+    text-align: center;
   }
   .instagram-feed .top-content .hashtag-box .hashtag-info {
-    float: right;
     font-size: 1.4em;
     font-weight: bold;
     width: 100%;
@@ -1056,15 +1054,19 @@ body p {
     padding-bottom: 1em;
     color: #ff453e;
   }
-  .instagram-feed .top-content #instafeed {
-    margin: 5em auto;
-    position: relative;
-    width: 50%;
+  .instagram-feed .top-content .instagram-box {
+    display: inline-block;
+    width: 70%;
   }
-  .instagram-feed .top-content #instafeed a {
+  .instagram-feed .top-content .instagram-box #instafeed a {
     float: left;
   }
-  .instagram-feed .top-content .more-images {
+  .instagram-feed .top-content .instagram-box #instafeed a:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+  .instagram-feed .top-content .instagram-box .more-images {
     color: #fff;
     background: #000;
     float: left;
@@ -1075,6 +1077,11 @@ body p {
     text-decoration: none;
     vertical-align: middle;
     width: 150px;
+  }
+  .instagram-feed:after {
+    clear: both;
+    content: '';
+    display: table;
   }
   .dates-content {
     margin: 0 auto;
