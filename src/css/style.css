@@ -703,6 +703,7 @@ body p {
   }
   .main-menu ul li a {
     font-family: "Knockout 48 A", "Knockout 48 B";
+    letter-spacing: 1px;
     font-size: 18pt;
     text-transform: uppercase;
     color: #fff;
@@ -855,6 +856,7 @@ body p {
     font-size: 17pt;
     width: 30px;
     height: 30px;
+    margin-top: 1px;
   }
   .tip .tip-teaser.thumbs .text-box {
     top: 25%;
@@ -897,6 +899,7 @@ body p {
   }
   .tip .tip-teaser:hover .text-box {
     display: block;
+    text-transform: uppercase;
   }
   .tip .tip-teaser .number-box {
     position: relative;
@@ -992,6 +995,34 @@ body p {
     width: 35px;
     height: 35px;
     padding: 3px 5px 3px 3px;
+  }
+  .tip .tip-content .next-tip {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 250px;
+    border-bottom: 2px solid #ff453e;
+    width: 170px;
+  }
+  .tip .tip-content .next-tip a {
+    text-decoration: none;
+  }
+  .tip .tip-content .next-tip .next-tip-text {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .tip .tip-content .next-tip .play {
+    background: #000;
+    float: left;
+    border-top: 15px solid transparent;
+    border-left: 25px solid #ff453e;
+    border-bottom: 15px solid transparent;
+  }
+  .tip .tip-content .next-tip .next-tip-teaser {
+    color: #ff453e;
+    margin-top: -10px;
+    margin-left: 30px;
+    font-size: 30pt;
   }
   .instagram-feed {
     background: #000;
