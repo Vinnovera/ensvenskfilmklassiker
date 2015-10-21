@@ -51,6 +51,7 @@
         "watch": false,
         "build": false,
         "paths": {
+            "src": [],
             "listen": [
                 "js/**/*.js",
                 "modules/**/*.js",
