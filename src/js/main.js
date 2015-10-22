@@ -1,11 +1,15 @@
 
 function showTip() {
-	$('.tip').click(function() {
-		console.log('hello');
-		
-		$('.tip-content').toggleClass('open');
-		$('.tip-teaser').toggleClass('thumbs');
+	var tips = $('.tip');
+
+	tips.each(function(){
+		$(this).click(function() {
+			$(this).find('.tip-content').toggleClass('open');
+			$(this).find('.tip-teaser').toggleClass('thumbs');
+		});
 	});
+
+
 }
 
 function instaFeed() {
