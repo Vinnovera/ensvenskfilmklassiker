@@ -179,13 +179,18 @@ th {
   padding: 0;
 }
 body {
-  font-family: "Verlag A", "Verlag B";
+  font-family: "Gotham A", "Gotham B", sans-serif;
 }
 body p {
   margin: 0;
 }
+h1,
+h2,
+h3 {
+  font-family: "Gotham Cond A", "Gotham Cond B", sans-serif;
+}
 .dates {
-  background: #edd400;
+  background: #fed061;
   width: 100%;
 }
 @media screen and (max-width: 640px) {
@@ -223,7 +228,7 @@ body p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    color: #edd400;
+    color: #fed061;
     font-style: italic;
     font-weight: bold;
   }
@@ -233,7 +238,7 @@ body p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    color: #edd400;
+    color: #fed061;
     font-style: italic;
     font-weight: bold;
   }
@@ -258,7 +263,7 @@ body p {
     color: #fff;
   }
   .welcome .welcome-content h2 {
-    color: #b0f7e7;
+    color: #70bd95;
     padding: 5%;
     margin: 0;
   }
@@ -345,7 +350,7 @@ body p {
     margin-top: 5px;
   }
   .tip .tip-content {
-    background: #edd400;
+    background: #fed061;
     display: none;
   }
   .tip .tip-content.open {
@@ -421,7 +426,7 @@ body p {
     padding: 5%;
   }
   .dates-content {
-    background: #edd400;
+    background: #fed061;
   }
   .dates-content a {
     text-decoration: none;
@@ -495,7 +500,7 @@ body p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    color: #edd400;
+    color: #fed061;
     font-style: italic;
     font-weight: bold;
   }
@@ -506,7 +511,7 @@ body p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    color: #edd400;
+    color: #fed061;
     font-style: italic;
     font-weight: bold;
   }
@@ -534,7 +539,7 @@ body p {
   }
   .welcome .welcome-content h2 {
     font-size: 33pt;
-    color: #b0f7e7;
+    color: #70bd95;
     padding: 5%;
     margin: 0;
   }
@@ -743,7 +748,7 @@ body p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    color: #edd400;
+    color: #fed061;
     font-style: italic;
     font-weight: bold;
   }
@@ -753,7 +758,7 @@ body p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    color: #edd400;
+    color: #fed061;
     font-style: italic;
     font-weight: bold;
     font-size: 24pt;
@@ -776,7 +781,7 @@ body p {
     text-decoration: none;
   }
   .welcome {
-    background: #b0f7e7;
+    background: #70bd95;
     padding-bottom: 4em;
     padding-top: 4em;
   }
@@ -833,7 +838,7 @@ body p {
     width: 60%;
   }
   .tip {
-    background: #edd400;
+    background: #fed061;
   }
   .tip .tips-text {
     display: none;
