@@ -215,29 +215,69 @@
 
 .instagram-feed {
 	background: $black;
+	width: 100%;
 	
 	.top-content {
+		width: 100%;
 		
-		.hashtag-info {
-			text-transform: uppercase;
-			font-size: 30pt;
-			padding-top: 1em;
-			padding-bottom: 1em;
-			color: $red;
-			text-align: center;
+		.about-info {
+			padding: 0 10% 10% 10%;
+			width: 80%;
+			
+			.about-text {
+				color: $green;
+				font-size: 1.8em;
+			}
 		}
 		
-		.image-feed {
-			background: $white;
-			height: 40vh;
+		.hashtag-box {
+			width: 80%;
+			padding: 10%;
+			
+			.hashtag-info {
+				font-size: 1.4em;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $green;
+			}
 		}
 		
-		.about-text {
-			font-size: 36pt;
-			color: $white;
-			margin: 0 auto;
-			line-height: 60px;
-			padding: 5%;
+		.instagram-box {
+			overflow-x: scroll;
+			
+			.all-images {
+				width: 2700px;
+				
+				#instafeed {			
+					a {
+						float: left;
+					
+						&:after {
+							clear: both;
+							content: '';
+							display: table;
+						}
+					}
+				}
+		
+				.more-images {
+					color: black;
+					background: white;
+					float: left;
+					height: 150px;
+					line-height: 150px;
+					margin: 0;
+					text-align: center;
+					text-decoration: none;
+					vertical-align: middle;
+					width: 150px;
+					
+					&:hover {
+						background: $green;
+						color: white;
+					}
+				}
+			}		
 		}
 	}
 }
