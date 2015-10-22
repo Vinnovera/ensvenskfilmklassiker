@@ -31,3 +31,67 @@ body {
 	background: $yellow;
 	width: 100%;
 }
+
+/*******************************************************/
+/********************** INSTAGRAM **********************/
+/*******************************************************/
+
+.instagram-feed {
+	background: $black;
+	width: 100%;
+	
+	.top-content {
+		width: 100%;
+		padding: 2em 0 0 0;
+		
+		.about-info {			
+			.about-text {
+				color: $green
+				font-size: 1.8em;
+			}
+		}
+		
+		.hashtag-box {			
+			.hashtag-info {
+				font-size: 1.4em;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $green;
+			}
+		}
+		
+		.instagram-box {			
+			.all-images {
+				#instafeed {
+					a {
+						float: left;
+					}
+				}
+		
+				.more-images {
+					color: black;
+					background: $green;
+					float: left;
+					font-size: 1.2em;
+					margin: 0;
+					text-align: center;
+					text-transform: uppercase;
+					text-decoration: none;
+					vertical-align: middle;
+					
+					&:after {
+						clear: both;
+						content: '';
+						display: table;
+					}
+				}
+				
+				&:after {
+					clear: both;
+					content: '';
+					display: table;
+				}
+			}
+		}
+	}
+}

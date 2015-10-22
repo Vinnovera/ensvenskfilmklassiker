@@ -13,7 +13,7 @@ function instaFeed() {
 	var feed = new Instafeed({
 		get: 'tagged',
 		tagName: 'stockholmfilmfestival',
-		limit: 17,
+		limit: 23,
 		sortBy: 'most-recent',
 		resolution: 'thumbnail',
 		clientId: clientId
