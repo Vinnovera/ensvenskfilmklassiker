@@ -375,27 +375,24 @@
 /*******************************************************/
 
 .footer-content {
-	background: $yellow;
-	height: 50vh;
-	
+
 	h2 {
 		padding-top: 4em;
-		text-align: center;
-		margin: 0 auto;
-		color: $white;
+	}
+	
+	.footer-logo{
+		float: left;
 	}
 	
 	.logo-smicker {
-		position: absolute;
-		margin-top: 13em;
 		width: 15%;
-		left: 35%;
 	}
 	
 	.logo-vinnovera {
-		position: absolute;
-		margin-top: 3em;
 		width: 15%;
-		left: 55%;
+		&:after{
+			clear:both;
+			float:none;
+		}
 	}
 }
