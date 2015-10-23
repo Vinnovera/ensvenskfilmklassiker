@@ -73,7 +73,7 @@
     "static": {
         "build": true,
         "paths": {
-            "src": [ "**/*.js", "**/*.ttf", "**/*.eot", "**/*.woff" ],
+            "src": [ "**/*.js", "**/*.ttf", "**/*.eot", "**/*.woff", "**/*.gif", "**/*.png", "**/*.jpg", "**/*.svg"],
             "dest": ""
         }
     },
