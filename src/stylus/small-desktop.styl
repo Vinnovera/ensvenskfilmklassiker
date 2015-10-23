@@ -1,0 +1,55 @@
+/*******************************************************/
+/********************** INSTAGRAM **********************/
+/*******************************************************/
+
+.instagram-feed {	
+	.top-content {		
+		.about-info {
+			display: block;
+			padding: 5%;
+			
+			.about-text {
+				margin: 0 auto;
+				width: 70%;
+			}
+		}
+		
+		.hashtag-box {
+			display: block;
+			text-align: center;
+			
+			.hashtag-info {
+				width: 100%;
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
+		}
+		
+		.instagram-box {
+			width: 100%;
+			
+			.all-images {		
+				a {
+					position: relative;
+					float: left;
+					width: 25%;
+					padding-bottom: 25%;
+					
+					img,span {
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	
+	&:after {
+		clear: both;
+		content: '';
+		display: table;
+	}
+}
