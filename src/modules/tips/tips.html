@@ -1,5 +1,5 @@
-<div class="tip">
-	<div class="tip-teaser" style="background-image: url({{=it.image}})">
+<div class="tip tip-teaser">
+	<div class="tip-teaser-content" style="background-image: url({{=it.image}})">
 	<div class="number-box">
 		<p>{{=it.number}}</p>
 	</div>
@@ -8,9 +8,11 @@
 		<p class="text-box-title">{{=it.tips}}</p>
 	</div>
 </div>
-<div class="tip-content">
+</div>
+
+<div class="tip tip-content">
 	<div class="vimeo-content">
-		HELLO VIMEO VIDEO!
+		<iframe src="{{=it.vimeo}}?color=70bd95" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 
 	<div class="tip1-content">
@@ -41,5 +43,4 @@
 			</div>
 		</div>
 	</div>
-</div>
 </div>

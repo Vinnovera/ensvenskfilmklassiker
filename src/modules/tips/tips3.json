@@ -3,6 +3,7 @@
 	"tips": "Skräcken",
 	"movietips": "Filmer att bli rädd av",
 	"image" : "../images/stills/skracken.jpg",
+	"vimeo" : "https://player.vimeo.com/video/81109621",
 	"movies" : [
 		{
 			"title": "",

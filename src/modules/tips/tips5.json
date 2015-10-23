@@ -3,6 +3,7 @@
 	"tips": "Stressen",
 	"movietips": "Filmer med stress i",
 	"image" : "../images/stills/stressen.jpg",
+	"vimeo" : "https://player.vimeo.com/video/81109621",
 	"movies" : [
 		{
 			"title": "",

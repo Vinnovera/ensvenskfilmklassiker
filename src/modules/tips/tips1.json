@@ -3,6 +3,7 @@
 	"tips": "Glädjen",
 	"movietips": "Filmer att skratta åt",
 	"image" : "../images/stills/gladjen.jpg",
+	"vimeo" : "https://player.vimeo.com/video/81109621",
 	"movies" : [
 		{
 			"title": "The big lebowski",

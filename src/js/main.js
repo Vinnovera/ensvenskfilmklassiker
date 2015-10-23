@@ -1,11 +1,14 @@
 
 function showTip() {
-	var tips = $('.tip');
+	var tips = $('.tip-teaser');
 
 	tips.each(function(){
 		$(this).click(function() {
-			$(this).find('.tip-content').toggleClass('open');
-			$(this).find('.tip-teaser').toggleClass('thumbs');
+
+			$(this).toggleClass('active');
+			$(this).next('.tip-content').toggleClass('open');
+			$('.tip-teaser').toggleClass('thumbs');
+
 		});
 	});
 
@@ -19,7 +22,7 @@ function instaFeed() {
 		tagName: 'stockholmfilmfestival',
 		limit: 23,
 		sortBy: 'most-recent',
-		resolution: 'thumbnail',
+		resolution: 'standard_resolution',
 		clientId: clientId
 	});
 
