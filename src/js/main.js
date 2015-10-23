@@ -19,7 +19,7 @@ function instaFeed() {
 		tagName: 'stockholmfilmfestival',
 		limit: 23,
 		sortBy: 'most-recent',
-		resolution: 'thumbnail',
+		resolution: 'standard_resolution',
 		clientId: clientId
 	});
 
