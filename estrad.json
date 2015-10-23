@@ -37,8 +37,8 @@
     },
 
     "images": {
-        "watch": true,
-        "build": true,
+        "watch": false,
+        "build": false,
         "paths": {
             "listen": [
                 "images/**/*.*"
