@@ -1,7 +1,24 @@
 {
 	"number": 2,
 	"tips": "Gråten",
-	"movietips": "Bra tips på film",
+	"movietips": "Filmer att gråta till",
 	"image" : "../images/stills/graten.jpg",
-	"vimeo" : "https://player.vimeo.com/video/59458547"
+	"vimeo" : "https://player.vimeo.com/video/59458547",
+	"movies" : [
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		}
+	]
 }

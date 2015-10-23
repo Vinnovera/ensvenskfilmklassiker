@@ -18,11 +18,13 @@
 	<div class="tip1-content">
 		<div class="movie-tips">
 			<h2>{{=it.movietips}}</h2>
-			<div class="movie-posters">
-				<img src="../images/movieposters/the-big-l.jpg">
-				<h3>The big lebowski</h3>
-				<p class="movie-excerpt">“I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing.”</p>
-			</div>
+			{{~it.movies :movie}}
+				<div class="movie-poster">
+					<img src="{{=movie.poster}}">
+					<h3>{{=movie.title}}</h3>
+					<p class="movie-excerpt">{{=movie.excerpt}}</p>
+				</div>
+			{{~}}
 		</div>
 		<div class="share-tip">
 			<h2>Dela med dig</h2>
