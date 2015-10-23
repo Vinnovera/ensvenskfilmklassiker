@@ -1,8 +1,25 @@
 {
 	"number": 3,
 	"tips": "Skräcken",
-	"movietips": "Bra tips på film",
-	"image" : "../images/stills/skracken.jpg"
+	"movietips": "Filmer att bli rädd av",
+	"image" : "../images/stills/skracken.jpg",
+	"movies" : [
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		}
+	]
 }
 
 

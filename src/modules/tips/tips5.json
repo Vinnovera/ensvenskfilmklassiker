@@ -1,8 +1,25 @@
 {
 	"number": 5,
 	"tips": "Stressen",
-	"movietips": "Bra tips på film",
-	"image" : "../images/stills/stressen.jpg"
+	"movietips": "Filmer med stress i",
+	"image" : "../images/stills/stressen.jpg",
+	"movies" : [
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		}
+	]
 }
 
 

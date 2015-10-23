@@ -1,8 +1,25 @@
 {
 	"number": 4,
 	"tips": "Ilskan",
-	"movietips": "Bra tips på film",
-	"image" : "../images/stills/ilskan.jpg"
+	"movietips": "Filmer att bli arg av",
+	"image" : "../images/stills/ilskan.jpg",
+	"movies" : [
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		}
+	]
 }
 
 

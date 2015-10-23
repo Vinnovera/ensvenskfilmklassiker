@@ -1,6 +1,23 @@
 {
 	"number": 2,
 	"tips": "Gråten",
-	"movietips": "Bra tips på film",
-	"image" : "../images/stills/graten.jpg"
+	"movietips": "Filmer att gråta till",
+	"image" : "../images/stills/graten.jpg",
+	"movies" : [
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		}
+	]
 }
