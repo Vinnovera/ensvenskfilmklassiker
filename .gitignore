@@ -1,4 +1,3 @@
 node_modules
 build
-.DS_Store
-style.css
+src/css/
