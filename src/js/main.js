@@ -1,11 +1,14 @@
 
 function showTip() {
-	var tips = $('.tip');
+	var tips = $('.tip-teaser');
 
 	tips.each(function(){
 		$(this).click(function() {
+
+			$(this).toggleClass('active');
 			$(this).next('.tip-content').toggleClass('open');
-			$(this).find('.tip-teaser').toggleClass('thumbs');
+			$('.tip-teaser').toggleClass('thumbs');
+
 		});
 	});
 
