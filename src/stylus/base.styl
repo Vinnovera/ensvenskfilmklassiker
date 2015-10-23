@@ -85,7 +85,6 @@ h1,h2,h3{
 	.call-to-action{
 		position absolute;
 		bottom 0;
-		width 100%;
 	}
 	
 }
@@ -98,6 +97,9 @@ h1,h2,h3{
 .welcome {
 	background: white;
 	color: black;
+}
+
+.welcome-content {
 	padding: 10%;
 	font-family: $condensed_font;
 	font-weight: 300;
@@ -482,11 +484,9 @@ h1,h2,h3{
 
 .call-to-action {
 	display: block;
-	background: $turquoise;
-	text-align: center;
-	color: white;
-	padding: 2em 0;
-	width: 100%;
+	color: $turquoise;
+	padding: 2em 10%;
+	width: 80%;
 	font-family: $condensed_font;
 	text-transform: uppercase;
 	font-size: 18pt;
@@ -495,12 +495,13 @@ h1,h2,h3{
 	letter-spacing: .1em;
 	cursor: pointer;
 	p {
+		margin: 0;
 		position: relative;
 		display: inline-block;
 		padding-right: 40px;
 		&:after {
 			content: '';
-			background: url('../images/arrow.svg') no-repeat center center;
+			background: url('../images/arrow_green.svg') no-repeat center center;
 			background-size: 20px
 			width: 32px;
 			height: 29px;
@@ -509,6 +510,13 @@ h1,h2,h3{
 			display: block;
 			position: absolute;
 		}
+	}
+	
+	&.neg{
+		
+		background: url('../images/arrow.svg');
+		background-color: $turquoise;
+		color: white;
 	}
 }
 
