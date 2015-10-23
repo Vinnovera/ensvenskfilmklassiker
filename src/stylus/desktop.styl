@@ -21,7 +21,7 @@
 			margin-right: 1%;
 			
 			a {
-				font-family: "Knockout 48 A", "Knockout 48 B";
+				font-family: $condensed_font;
 				letter-spacing: 1px;
 				font-size: 18pt;
 				text-transform: uppercase;
@@ -39,158 +39,26 @@
 /*******************************************************/
 
 .intro {
-	background: url("../images/intro-background.jpg") no-repeat 100% 37%;
-	background-size: cover;
-
-	padding-top: 1em;
-	padding-bottom: 4em;
-	
+	min-height: 900px;
 	.intro-content {
 		width: 100%;
-
-
-		.top-logo {
-			width: 120px;
-			padding-top: 5%;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
+		
+		.top-logo-wrapper{
+			padding-top: 50px;
 		}
 		
-		.mid-logo {
-			width: 40%;
-			padding: 2%;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			left: 0;
-			right: 0;
-		}
-		
-		.intro-text {
-			padding: 12% 11% 0% 11%;
-			font-size: 24pt;
-			text-align: center;
-			width: 70%;
-			margin-left: auto;
-			margin-right: auto;
-			color: $yellow;
-			font-style:italic;
-			font-weight: bold;
-		}
-	
-		.intro-text-bottom {
-			padding: 2%;
-			text-align: center;
-			width: 70%;
-			margin-left: auto;
-			margin-right: auto;
-			color: $yellow;
-			font-style:italic;
-			font-weight: bold;
-			font-size: 24pt;
-			
-		}
-	
-		button {
-			display: block;
-	    	width: 250px;
-			height: 75px;
-			margin-left: auto;
-			margin-right: auto;
-			background: $red;
-			border: none;
-			text-align: center;
-		
-			a {
-				font-family: "Knockout 48 A", "Knockout 48 B";
-				text-transform: uppercase;
-				font-size: 18pt;
-				color: $black;
-				text-decoration: none;
-			}
+		.intro-text-bottom{
+			bottom: 20%;
 		}
 	}
 }
 
-/*******************************************************/
-/*********************** WELCOME ***********************/
-/*******************************************************/
-
-.welcome {
-	background: $turquoise;
-	padding-bottom: 4em;
-	padding-top: 4em;
-	
-	
-	.top-content {
-		text-transform: uppercase;
-		background: $red;
-		font-size: 10pt;
-		font-weight: bold;
-	}
-	
-	.ready-text {
-		display: none;
-	}
-
-	.welcome-content {
-		margin: 0 auto;
-		width: 42%;
-		color: $black;
-		
-		h2 {
-			display: none;
-		}
-		
-		p {
-			padding: 0;
-		}
-		
-		.intro-text {
-			padding-bottom: 1em;
-			font-size: 20pt;
-			font-weight: bold;
-			line-height: 40px;
-		}
-		
-		.info-text {
-			padding-top: 0.5em;
-			font-size: 14pt;
-		}
-		
-		.end-text {
-			padding-top: 2em;
-			padding-bottom: 4em;
-			font-size: 14pt;
-		}
-		
-		.arrow-down {
-			width: 200px;
-			height: 250px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 2em;
-		}
-		
-		.arrowdown-text {
-			margin-right: auto;
-			margin-left: auto;
-			text-align: center;
-			font-size: 20pt;
-			font-weight: bold;
-			line-height: 40px;
-			width: 60%;
-		}
-	}
-}
 
 /*******************************************************/
 /************************* TIP ************************/
 /*******************************************************/
 
-.tip {
+.tips {
 	background: $yellow;
 	
 	.tips-text {
@@ -198,8 +66,6 @@
 	}
 	
 	.tip-teaser {
-		background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
-		background-size: cover;
 		display: inline-block;
 		height: 400px;
 		width: calc(100% / 3);
@@ -238,34 +104,9 @@
 				}	
 			}
 		}
-
-		&:nth-of-type(2) {
-			background: url("../images/stills/marianne_graten_raw_still_v1.jpg") no-repeat center;
-			background-size: cover;
-		}
-		
-		&:nth-of-type(3) {
-			background: url("../images/stills/derrick_skracken_raw_still_v1.jpg ") no-repeat center;
-			background-size: cover;
-		}
-		
-		&:nth-of-type(4) {
-			background: url("../images/stills/marianne_ilskan_raw_still_v1.jpg") no-repeat center;
-			background-size: cover;
-		}
-		
-		&:nth-of-type(5) {
-			background: url("../images/stills/micke_stressen_raw_still_v1.jpg") no-repeat center;
-			background-size: cover;
-		}
-		
-		&:nth-of-type(6) {
-			background: url("../images/stills/anders_gladjen_raw_still_v1.jpg") no-repeat center;
-			background-size: cover;
-		}
 		
 		&:hover {
-			background: $red;
+			background: $yellow;
 			
 			.text-box {
 				display: block;
@@ -278,8 +119,7 @@
 			top: 0%;
 			text-align: center;
 			font-size: 27pt;
-			font-family: "Verlag A", "Verlag B";
-			background: $red;
+			background: $yellow;
 			width: 50px;
 			height: 50px;
 		}
@@ -294,7 +134,7 @@
 			height: 50px;
 			
 			.play {
-				background: $red;
+				background: $yellow;
 				float: left;
 			    border-top: 25px solid transparent;
 			    border-left: 35px solid $white;
@@ -393,7 +233,7 @@
 			font-weight: bold;
 			color: $white;
 			margin-top: 250px;
-			border-bottom: 2px solid $red;
+			border-bottom: 2px solid $yellow;
     		width: 170px;
     		
     		a {
@@ -409,12 +249,12 @@
 				background: $black;
 				float: left;
 			    border-top: 15px solid transparent;
-			    border-left: 25px solid $red;
+			    border-left: 25px solid $yellow;
 			    border-bottom: 15px solid transparent;
 			}
 			
 			.next-tip-teaser {
-				color: $red;
+				color: $yellow;
 				margin-top: -10px;
 			    margin-left: 30px;
 			    font-size: 30pt;
@@ -427,59 +267,57 @@
 /********************** INSTAGRAM **********************/
 /*******************************************************/
 
-.instagram-feed {	
-	.top-content {		
-		.about-info {
-			display: block;
-			padding: 5%;
-			
-			.about-text {
-				margin: 0 auto;
-				width: 50%;
-			}
-		}
-		
-		.hashtag-box {
-			display: block;
-    		text-align: center;
-			
-			.hashtag-info {
-				width: 100%;
-				padding-top: 1em;
-				padding-bottom: 1em;
-			}
-		}
-		
-		.instagram-box {
-			width: 100%;
-			
-			.all-images {
-				#instafeed {
-		
-				a {
-					position: relative;
-					float: left;
-					width: 12.5%;
-					padding-bottom: 12.5%;
-					  
-					img,span {
-					    position: absolute;
-					    left: 0;
-					    top: 0;
-					    width: 100%;
-					    height: 100%;
-					    line-height: 100%;
-					}
-				}
-			}
-		}
-	}
-	
-	&:after {
-		clear: both;
-		content: '';
-		display: table;
-	}
+.instagram-feed {    
+    .top-content {        
+        .about-info {
+            display: block;
+            padding: 5%;
+            
+            .about-text {
+                margin: 0 auto;
+                width: 50%;
+            }
+        }
+        
+        .hashtag-box {
+            display: block;
+           text-align: center;
+            
+            .hashtag-info {
+                width: 100%;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+        }
+        
+        .instagram-box {
+            width: 100%;
+            
+            .all-images {
+                #instafeed {
+                    a {
+                        width: 12.5%;
+                        
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+        
+                .more-images {
+                    height: 100%;
+                    width: 12.5%;
+                }
+            }
+        }
+    }
+    
+    &:after {
+        clear: both;
+        content: '';
+        display: table;
+    }
 }
 
 /*******************************************************/
@@ -520,13 +358,22 @@
 }
 
 
+/*******************************************************/
+/********************* COMPONENTS **********************/
+/*******************************************************/
+
+.dates {
+	background: $yellow;
+	width: 100%;
+}
+
 
 /*******************************************************/
 /*********************** FOOTER ************************/
 /*******************************************************/
 
 .footer-content {
-	background: $red;
+	background: $yellow;
 	height: 50vh;
 	
 	h2 {

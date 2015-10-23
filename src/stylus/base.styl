@@ -9,9 +9,9 @@ $yellow = #fed061
 $red = #FF453E
 $green = #70bd95
 
-
 regular_font = "Gotham A", "Gotham B", sans-serif
 condensed_font = "Gotham Cond A", "Gotham Cond B", sans-serif
+
 
 body {
 	font-family: regular_font
@@ -19,8 +19,6 @@ body {
 	p {
 		margin: 0;
 	}
-	
-	
 	
 	
 }
@@ -35,10 +33,258 @@ h1,h2,h3{
 /*******************************************************/
 
 
+.intro {
+	background: black;
+	//background: url("../images/intro-background.jpg") no-repeat 50%;
+	//background-size: cover;
+	height 80vh;
+	min-height: 600px;
+	.intro-content {
+		position: relative;
+		height: 100%;
+		
+		color: $turquoise;
+
+		.top-logo-wrapper{
+			background: $turquoise;
+			.top-logo {
+				max-width: 140px;
+				width: 30%;
+				display: block;
+				margin: 0 auto;
+				padding: 3% 0;
+			}
+		}
+		
+		.mid-content{
+			position: relative;
+			width: 80%;
+			height: 60%;
+			max-width: 480px;
+			margin: 0 auto;
+			display: block;
+		}
+		
+		.mid-logo {
+			position: absolute;
+			top: 10%;
+			width: 100%;
+			display: block;
+		}
+		
+		.intro-text-bottom {
+			font-family: condensed_font;
+			font-weight: 300;
+			font-style: normal;
+			font-size: 2em;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	.call-to-action{
+		position absolute;
+		bottom 0;
+		width 100%;
+	}
+	
+}
+
+
+/*******************************************************/
+/*********************** WELCOME ***********************/
+/*******************************************************/
+
+.welcome {
+	background: white;
+	color: black;
+	padding: 3%;
+		p {
+			padding-bottom: 1em;
+			font-size: 1.4em;
+			line-height: 1.4em;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+}
+
+
+
+/*******************************************************/
+/********************* SINGLE TIP **********************/
+/*******************************************************/
+
+.tips {
+	background: black;
+	margin-bottom: 2em;
+	
+	.tips-text {
+		color: $white;
+		padding: 20px;
+		font-size: 30pt;
+		font-family: condensed_font;
+	}
+	
+	.tip {	
+		
+		.tip-teaser {
+			
+			display: inline-block;
+			margin: 5%;
+			height: 200px;
+			width: 90%;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			
+			.number-box {
+				display: block;
+				position: relative;
+				top: 60%;
+				margin-left: -19px;
+				text-align: center;
+				font-size: 20pt;
+				font-family: $condensed_font;
+				background: $yellow;
+				width: 35px;
+				height: 35px;
+			}
+			
+			.text-box {
+				position: relative;
+				float: left;
+				margin-left: 50px;
+				top: 43.2%;
+				width: 140px;
+				font-size: 15pt;
+				height: 35px;
+				background: $turquoise;
+				color: black;
+				
+				.play {
+					margin: 8px;
+					background: $red;
+					float: left;
+				    border-top: 10px solid transparent;
+				    border-left: 15px solid $white;
+				    border-bottom: 10px solid transparent;
+				}
+				
+				p {
+					text-transform: uppercase;
+					float: left;
+					text-align: center;
+					margin-top: 5px;
+
+				}
+			}
+
+		}
+		
+		.tip-content {
+			background: $yellow;
+			display: none;
+			
+			&.open{
+				display block
+				position: relative;
+				margin-top: -230px;
+	    		z-index: 0;
+			}
+			
+			.youtube-content {
+				background: $white;
+				height: 180px;
+			}
+			
+			.tip1-content {
+				padding: 1em;
+				
+				.movie-tips {
+
+					h2 {
+						font-size: 12pt;
+						text-transform: uppercase;
+						border-bottom 2px solid $black;
+						line-height: 40px;
+					}
+					
+					.movie-posters {
+						outline: 1px solid $black;
+						height: 180px;
+
+					}
+				}
+				
+				.share-tip {
+					padding-top: 2em;
+					
+					h2 {
+						font-size: 12pt;
+						text-transform: uppercase;
+					}
+					
+					input {
+						border: none;
+						border-radius: 2px;
+						height: 28px;
+						width: 140px;
+					}
+					
+					input::-webkit-input-placeholder { /* WebKit browsers */
+	  					padding-left: 0.5em;
+					}
+					
+					.socialmedia-icons {
+						float: right;
+						margin-top: -5px;
+						
+						img {
+							width: 35px;
+							height: 35px;
+							padding: 3px 5px 3px 3px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+
+/*******************************************************/
+/********************* COMPONENTS **********************/
+/*******************************************************/
+
 .dates {
 	background: $yellow;
 	width: 100%;
 }
+
+
+
+.call-to-action {
+	display: block;
+	background: $turquoise;
+	text-align: center;
+	color: white;
+	padding: 2em 0;
+	width: 100%;
+
+	a {
+		font-family: condensed_font;
+		text-transform: uppercase;
+		font-size: 18pt;
+		color: $black;
+		text-decoration: none;
+	}
+}
+
 
 /*******************************************************/
 /********************** INSTAGRAM **********************/

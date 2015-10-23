@@ -1,6 +1,8 @@
 {
-	"number": 4,
-	"tips": "Stressen"
+	"number": 5,
+	"tips": "Stressen",
+	"movietips": "Bra tips på film",
+	"image" : "../images/stills/stressen.jpg"
 }
 
 

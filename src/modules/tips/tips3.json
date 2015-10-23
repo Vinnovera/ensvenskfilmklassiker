@@ -1,6 +1,8 @@
 {
 	"number": 3,
-	"tips": "Skräcken"
+	"tips": "Skräcken",
+	"movietips": "Bra tips på film",
+	"image" : "../images/stills/skracken.jpg"
 }
 
 
