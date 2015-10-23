@@ -352,7 +352,13 @@ h1,h2,h3{
 					text-align: center;
 					text-transform: uppercase;
 					text-decoration: none;
-					vertical-align: middle;
+
+					span:before {
+						content: '';
+						display: inline-block;
+						height: 100%;
+						vertical-align: middle;
+					}
 					
 					&:after {
 						clear: both;
