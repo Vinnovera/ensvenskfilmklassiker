@@ -455,22 +455,21 @@
 			
 			.all-images {
 				#instafeed {
-					a {
-						width: 12.5%;
-						
-						img {
-							width: 100%;
-							height: auto;
-						}
-					}
-				}
 		
-				.more-images {
+				a {
 					position: relative;
-					right: 0;
-					bottom: 0;
+					float: left;
 					width: 12.5%;
-					margin: 0;
+					padding-bottom: 12.5%;
+					  
+					img,span {
+					    position: absolute;
+					    left: 0;
+					    top: 0;
+					    width: 100%;
+					    height: 100%;
+					    line-height: 100%;
+					}
 				}
 			}
 		}
