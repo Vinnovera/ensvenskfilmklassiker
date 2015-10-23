@@ -16,15 +16,17 @@
 	</div>
 
 	<div class="tip1-content">
+		<h2>{{=it.movietips}}</h2>
 		<div class="movie-tips">
-			<h2>{{=it.movietips}}</h2>
-			{{~it.movies :movie}}
-				<div class="movie-poster">
-					<img src="{{=movie.poster}}">
-					<h3>{{=movie.title}}</h3>
-					<p class="movie-excerpt">{{=movie.excerpt}}</p>
-				</div>
-			{{~}}
+			<div class="related-movies">
+				{{~it.movies :movie}}
+					<div class="movie-poster">
+						<img src="{{=movie.poster}}">
+						<h3>{{=movie.title}}</h3>
+						<p class="movie-excerpt">{{=movie.excerpt}}</p>
+					</div>
+				{{~}}
+			</div>
 		</div>
 		<div class="share-tip">
 			<h2>Dela med dig</h2>

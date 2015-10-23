@@ -207,35 +207,41 @@ h1,h2,h3{
 			.tip1-content {
 				padding: 1em;
 				
-				.movie-tips {
-
-					h2 {
+				h2 {
 						font-size: 12pt;
 						text-transform: uppercase;
 						border-bottom 2px solid $black;
 						line-height: 40px;
 					}
+				
+				.movie-tips {
+					overflow-x: scroll;
 					
-					.movie-poster {
-						display: inline-block;
+					.related-movies{
+						width: 900px;
 						
-						h3	{
-							text-decoration: underline;
-						    float: left;
-						    padding-left: .5em;
-						    margin: 0;
-						}
+						.movie-poster {
+							display: inline-block;
+							width: 300px;
 						
-						img {
-							height: 200px;
-							float: left;
-						}
-						
-						.movie-excerpt {
-							float: left;
-						    width: 40%;
-						    font-size: 8pt;
-						    padding: .5em;
+							h3	{
+								text-decoration: underline;
+							    float: left;
+							    padding-left: .5em;
+							    margin: 0;
+							}
+							
+							img {
+								height: 200px;
+								float: left;
+							}
+							
+							.movie-excerpt {
+								float: left;
+							    width: 40%;
+							    font-size: 8pt;
+							    padding: 1em;
+							}
 						}
 					}
 				}
