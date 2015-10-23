@@ -1,7 +1,5 @@
 {
 	"number": 2,
-	"tips": "stress",
-	"movietips": "Bra tips på stress-film"
+	"tips": "Gråten",
+	"image" : "../images/stills/graten.jpg"
 }
-
-
