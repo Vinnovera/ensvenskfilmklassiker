@@ -74,81 +74,82 @@
 	
 	.tip-teaser{
 		display: block;
+		position: relative
 		float:left;
-		width: calc(100% / 3);
-		height: 50vh;
-		max-height: 410px;
-		overflow: hidden;
+		width: (100% / 3);
+		padding-bottom: (100% / 3);
+		height: 0;
+		overflow:hidden;
 		
 		&.thumbs {
-			height: 200px;
-		    width: calc(100% / 6);
-		 	margin-top: 90vh;
-		    background: black;
-		    		
-		    .number-box {
+			width: (100% / 6);
+			padding-bottom: (100% / 6);
+			margin-top: 90vh;
+			background: black;
+			
+			.number-box {
 				font-size: 17pt;
 				width: 30px;
 				height: 30px;
-		    }
-		    &.active{
-		    	padding: 10px;
-		    	background: $yellow
-		    }
-		}
+			}
+			&.active{
+				background: $yellow
+			}
+			}
 
-		.tip-teaser-content {
-			margin: 0;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			&:hover {
-				background-image: none!important;
-				background-color: $yellow;
+			.tip-teaser-content {
+				margin: 0;
+				width: 100%;
+				height: 0;
+				padding-bottom: 100%;
+				text-align: center;
+				&:hover {
+					background-image: none!important;
+					background-color: $yellow;
+					
+					.text-box {
+						display: inline-block;
+					}
+				}
+				
+				.number-box {
+					position: absolute;
+					top: 0;
+					left: 0;
+					text-align: center;
+					font-size: 27pt;
+					background: $yellow;
+					width: 50px;
+					height: 50px;
+					margin: 0;
+				}
 				
 				.text-box {
-					display: inline-block;
-				}
-			}
-			
-			.number-box {
-				position: absolute;
-				top: 0;
-				left: 0;
-				text-align: center;
-				font-size: 27pt;
-				background: $yellow;
-				width: 50px;
-				height: 50px;
-				margin: 0;
-			}
-			
-			.text-box {
-				display: none;
-				position: relative;
-				height: 50px;
-				font-size: 32pt;
-				line-height: 50px;
-				background: none;
-				float: none;
-				clear: both;
-				top: 42%;
-				
-				.play {
-					margin: 5px 5px 5px 13px;
-					float: left;
-				    border-top: 20px solid transparent;
-				    border-left: 30px solid black;
-				    border-bottom: 20px solid transparent;
+					display: none;
+					position: relative;
+					height: 50px;
+					font-size: 32pt;
+					line-height: 50px;
+					background: none;
+					float: none;
+					clear: both;
+					padding-top: 42%;
+					
+					.play {
+						margin: 5px 5px 5px 13px;
+						float: left;
+					    border-top: 20px solid transparent;
+					    border-left: 30px solid black;
+					    border-bottom: 20px solid transparent;
+					}
+					
 				}
 				
-			}
-			
 
+			}
+			
 		}
-		
-	}
-	.tip-content {
+		.tip-content {
 			background: $black;
 			display: none;
 			height: 80vh;

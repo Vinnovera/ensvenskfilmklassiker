@@ -118,6 +118,7 @@ h1,h2,h3{
 .tips {
 	background: black;
 	padding-bottom: 2em;
+	overflow: hidden;
 	
 	.tips-text {
 		color: $white;
@@ -315,6 +316,23 @@ h1,h2,h3{
 	text-decoration: none;
 	font-weight: 400;
 	letter-spacing: .1em;
+	cursor: pointer;
+	p {
+		position: relative;
+		display: inline-block;
+		padding-right: 40px;
+		&:after {
+			content: '';
+			background: url('../images/arrow.svg') no-repeat center center;
+			background-size: 20px
+			width: 32px;
+			height: 29px;
+			top: 0;
+			right: 0;
+			display: block;
+			position: absolute;
+		}
+	}
 }
 
 
