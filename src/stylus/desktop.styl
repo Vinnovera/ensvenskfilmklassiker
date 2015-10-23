@@ -60,98 +60,69 @@
 
 .tips {
 	background: $yellow;
+	padding 0;
 	
 	.tips-text {
 		display: none;
 	}
 	
-	.tip{
-		display: inline-block;
-		.tip-teaser {
-			height: 400px;
-			width: calc(100% / 3);
-			color: $white;
-			overflow: hidden;
-			margin: 0 -.2em -.2em 0;
-			
-			&.thumbs {
-				height: 200px;
-	    		width: calc(60% / 3);
-	    		    		
-	    		.number-box {
-					font-size: 17pt;
-					width: 30px;
-					height: 30px;
-					margin-top: 1px;
-	    		}
-	    		
-	    		.text-box {
-					top: 25%;
-					left: 25%;
-					width: 100%;
-					height: 50px;
-				
-					.play {
-					    border-top: 15px solid transparent;
-					    border-left: 25px solid $white;
-					    border-bottom: 15px solid transparent;
-					}
-					
-					.tips-box-text {
-						font-size: 15pt;
-						margin-left: 20px;
-						margin-top: 3px;
-					}	
-				}
-			}
-			
+	.tip-teaser{
+		display: block;
+		float:left;
+		width: calc(100% / 3);
+		height: 50vh;
+		max-height: 410px;
+		overflow: hidden;
+		.tip-teaser-content {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
 			&:hover {
-				background: $yellow;
+				background-image: none!important;
+				background-color: $yellow;
 				
 				.text-box {
-					display: block;
-					text-transform: uppercase;
+					display: inline-block;
 				}
 			}
 			
 			.number-box {
-				position: relative;
-				top: 0%;
+				position: absolute;
+				top: 0;
+				left: 0;
 				text-align: center;
 				font-size: 27pt;
 				background: $yellow;
 				width: 50px;
 				height: 50px;
+				margin: 0;
 			}
 			
 			.text-box {
 				display: none;
 				position: relative;
-				text-align: center;
-				top: 25%;
-				left: 25%;
-				width: 100%;
 				height: 50px;
+				font-size: 32pt;
+				line-height: 50px;
+				background: none;
+				float: none;
+				clear: both;
+				top: 42%;
 				
 				.play {
-					background: $yellow;
+					margin: 5px 5px 5px 13px;
 					float: left;
-				    border-top: 25px solid transparent;
-				    border-left: 35px solid $white;
-				    border-bottom: 25px solid transparent;
+				    border-top: 20px solid transparent;
+				    border-left: 30px solid black;
+				    border-bottom: 20px solid transparent;
 				}
 				
-				.tips-box-text {
-					float: left;
-					font-size: 20pt;
-					text-align: center;
-					margin-left: 25px;
-					margin-top: 10px;
-				}	
 			}
 		}
 		
-		.tip-content {
+	}
+	.tip-content {
 			background: $black;
 			display: none;
 			
@@ -261,7 +232,6 @@
 				}
 			}
 		}
-	}
 }
 
 /*******************************************************/

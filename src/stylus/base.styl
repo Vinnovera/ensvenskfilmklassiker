@@ -126,9 +126,10 @@ h1,h2,h3{
 		font-family: $condensed_font;
 	}
 	
-	.tip {
+	.tip-teaser {
+		position: relative;
 		
-		.tip-teaser {
+		.tip-teaser-content {
 			
 			display: inline-block;
 			margin: 5%;
@@ -174,12 +175,17 @@ h1,h2,h3{
 				
 				.text-box-title{
 					float:left;
+					&:after{
+						clear:both;
+						float:none;
+					}
 				}
 				
 			}
 
 		}
-		
+	}
+	
 		.tip-content {
 			background: $yellow;
 			display: none;
@@ -270,7 +276,6 @@ h1,h2,h3{
 				}
 			}
 		}
-	}
 }
 
 .hidden {

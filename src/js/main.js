@@ -4,7 +4,7 @@ function showTip() {
 
 	tips.each(function(){
 		$(this).click(function() {
-			$(this).find('.tip-content').toggleClass('open');
+			$(this).next('.tip-content').toggleClass('open');
 			$(this).find('.tip-teaser').toggleClass('thumbs');
 		});
 	});
