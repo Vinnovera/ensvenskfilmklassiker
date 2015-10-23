@@ -267,57 +267,59 @@
 /********************** INSTAGRAM **********************/
 /*******************************************************/
 
-.instagram-feed {    
-    .top-content {        
-        .about-info {
-            display: block;
-            padding: 5%;
-            
-            .about-text {
-                margin: 0 auto;
-                width: 50%;
-            }
-        }
-        
-        .hashtag-box {
-            display: block;
-           text-align: center;
-            
-            .hashtag-info {
-                width: 100%;
-                padding-top: 1em;
-                padding-bottom: 1em;
-            }
-        }
-        
-        .instagram-box {
-            width: 100%;
-            
-            .all-images {
-                #instafeed {
-                    a {
-                        width: 12.5%;
-                        
-                        img {
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                }
-        
-                .more-images {
-                    height: 100%;
-                    width: 12.5%;
-                }
-            }
-        }
-    }
-    
-    &:after {
-        clear: both;
-        content: '';
-        display: table;
-    }
+.instagram-feed {	
+	.top-content {		
+		.about-info {
+			display: block;
+			padding: 5%;
+			
+			.about-text {
+				margin: 0 auto;
+				width: 50%;
+			}
+		}
+		
+		.hashtag-box {
+			display: block;
+    		text-align: center;
+			
+			.hashtag-info {
+				width: 100%;
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
+		}
+		
+		.instagram-box {
+			width: 100%;
+			
+			.all-images {
+				#instafeed {
+		
+				a {
+					position: relative;
+					float: left;
+					width: 12.5%;
+					padding-bottom: 12.5%;
+					  
+					img,span {
+					    position: absolute;
+					    left: 0;
+					    top: 0;
+					    width: 100%;
+					    height: 100%;
+					    line-height: 100%;
+					}
+				}
+			}
+		}
+	}
+	
+	&:after {
+		clear: both;
+		content: '';
+		display: table;
+	}
 }
 
 /*******************************************************/
