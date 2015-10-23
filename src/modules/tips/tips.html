@@ -1,51 +1,39 @@
-<div class="tip tip-teaser">
-	<div class="tip-teaser-content" style="background-image: url({{=it.image}})">
-	<div class="number-box">
-		<p>{{=it.number}}</p>
-	</div>
-	<div class="text-box">
-		<div class="play"></div>
-		<p class="text-box-title">{{=it.tips}}</p>
-	</div>
-</div>
-</div>
+<a href="/foo" class="teaser" style="background-image: url({{=it.image}})">
+	<div class="number-box">{{=it.number}}</div>
+	<p class="text-box-title">{{=it.tips}}</p>
+</a>
 
-<div class="tip tip-content">
-	<div class="back-btn">
-		Tillbaka
-	</div>
-	<div class="vimeo-content">
-		<iframe src="{{=it.vimeo}}?color=70bd95" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	</div>
+<div class="content">
+	<a class="back-btn">Tillbaka</a>
 
-	<div class="tip1-content">
-		<h2>{{=it.movietips}}</h2>
-		<div class="movie-tips">
-			<div class="related-movies">
-				{{~it.movies :movie}}
-					<div class="movie-poster">
-						<img src="{{=movie.poster}}">
-						<h3>{{=movie.title}}</h3>
-						<p class="movie-excerpt">{{=movie.excerpt}}</p>
-					</div>
-				{{~}}
-			</div>
+	<iframe class="video" src="{{=it.vimeo}}?color=70bd95" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+	<h2>{{=it.movietips}}</h2>
+	<div class="movie-tips">
+		<div class="related-movies">
+			{{~it.movies :movie}}
+				<div class="movie-poster">
+					<img src="{{=movie.poster}}">
+					<h3>{{=movie.title}}</h3>
+					<p class="movie-excerpt">{{=movie.excerpt}}</p>
+				</div>
+			{{~}}
 		</div>
-		<div class="share-tip">
-			<h2>Dela med dig</h2>
-			<input type="text" placeholder="sff.se/tips1">
-			<div class="socialmedia-icons">
-				<img src="../images/socialmedia/facebook_w_circle_32px.svg">
-				<img src="../images/socialmedia/twitter_w_circle_32px.svg">
-				<img src="../images/socialmedia/mail_w_circle_32px.svg">
-			</div>
-			<div class="next-tip">
-				<a href="">
-					<p class="next-tip-text">Nästa tips</p>
-					<div class="play"></div>
-					<p class="next-tip-teaser">Ilskan</p>
-				</a>
-			</div>
+	</div>
+	<div class="share-tip">
+		<h2>Dela med dig</h2>
+		<input type="text" placeholder="sff.se/tips1">
+		<div class="socialmedia-icons">
+			<img src="../images/socialmedia/facebook_w_circle_32px.svg">
+			<img src="../images/socialmedia/twitter_w_circle_32px.svg">
+			<img src="../images/socialmedia/mail_w_circle_32px.svg">
+		</div>
+		<div class="next-tip">
+			<a href="">
+				<p class="next-tip-text">Nästa tips</p>
+				<div class="play"></div>
+				<p class="next-tip-teaser">Ilskan</p>
+			</a>
 		</div>
 	</div>
 </div>

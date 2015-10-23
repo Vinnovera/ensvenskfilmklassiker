@@ -12,6 +12,7 @@ $green = #70bd95
 $regular_font = "Gotham A", "Gotham B", sans-serif
 $condensed_font = "Gotham Cond A", "Gotham Cond B", sans-serif
 
+$activeTipHeight = 1000px
 
 body {
 	font-family: $regular_font
@@ -116,10 +117,186 @@ h1,h2,h3{
 /*******************************************************/
 
 .tips {
-	background: black;
-	padding-bottom: 2em;
-	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 	
+	&.active {
+		position: relative;
+		padding-top: $activeTipHeight;
+		
+		.tip {
+			width: 20%;
+			
+
+		}
+	}
+		
+	.tip {
+		float: left;
+		width: 33.333333333333%;
+		padding: 0;
+		margin: 0;
+		background: red;
+		box-sizing: border-box;
+		
+		&.active {
+			border: 5px solid $yellow;
+			
+			.content {
+				display: block;
+			}
+		}
+
+		.teaser {
+			display: block;
+			position: relative;
+			width: 100%;
+			padding-bottom: 100%;
+			background-color: $yellow;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-family: $condensed_font;
+			font-weight: 500;
+			text-decoration: none;
+			color: white !important;
+			
+			&:hover {
+				background-image: none !important;
+				
+				.text-box-title {
+					display: block;
+				}
+			}
+
+			.number-box {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 35px;
+				height: 35px;
+				text-align: center;
+				font-size: 20px;
+				line-height: 35px;
+				background: $yellow;
+			}
+			
+			.text-box-title {
+				display: none;
+				position: absolute;
+				top: 42%;
+				left: 20%;
+				height: 50px;
+				font-size: 32pt;
+				line-height: 50px;
+				background: none;
+				float: none;
+				clear: both;
+			}
+
+			.text-box-title:before {
+				content: '';
+				float: left;
+				margin: 5px 5px 5px 13px;
+				border-top: 20px solid transparent;
+				border-left: 30px solid white;
+				border-bottom: 20px solid transparent;
+			}
+		}
+		
+		.content {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: $activeTipHeight;
+			overflow: hidden;
+
+			.video {
+				width: 100%;
+				min-height: 220px;
+			}
+			
+			h2 {
+					font-size: 12pt;
+					text-transform: uppercase;
+					border-bottom 2px solid $black;
+					line-height: 40px;
+				}
+			
+			.movie-tips {
+				overflow-x: scroll;
+				
+				.related-movies{
+					width: 900px;
+					
+					.movie-poster {
+						display: inline-block;
+						width: 300px;
+					
+						h3	{
+							text-decoration: underline;
+						    float: left;
+						    padding-left: .5em;
+						    margin: 0;
+						}
+						
+						img {
+							height: 200px;
+							float: left;
+						}
+						
+						.movie-excerpt {
+							float: left;
+						    width: 40%;
+						    font-size: 8pt;
+						    padding: 1em;
+						}
+					}
+				}
+			}
+			
+			.share-tip {
+				padding-top: 2em;
+				
+				h2 {
+					font-size: 12pt;
+					text-transform: uppercase;
+				}
+				
+				input {
+					border: none;
+					border-radius: 2px;
+					height: 28px;
+					width: 120px;
+				}
+				
+				input::-webkit-input-placeholder {
+  					padding-left: 0.5em;
+				}
+				
+				.socialmedia-icons {
+					float: right;
+					margin-top: -5px;
+					
+					img {
+						width: 35px;
+						height: 35px;
+						padding: 3px 5px 3px 3px;
+					}
+				}
+				
+				.next-tip {
+					display: none;
+				}
+			}
+		}
+	}
+	
+
+/*	
 	.tips-text {
 		color: $white;
 		padding: 20px;
@@ -262,7 +439,7 @@ h1,h2,h3{
 						width: 120px;
 					}
 					
-					input::-webkit-input-placeholder { /* WebKit browsers */
+					input::-webkit-input-placeholder {
 	  					padding-left: 0.5em;
 					}
 					
@@ -282,7 +459,7 @@ h1,h2,h3{
 					}
 				}
 			}
-		}
+		}*/
 }
 
 .hidden {
