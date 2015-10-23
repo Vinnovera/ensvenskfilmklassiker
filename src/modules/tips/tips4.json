@@ -1,9 +1,26 @@
 {
 	"number": 4,
 	"tips": "Ilskan",
-	"movietips": "Bra tips på film",
+	"movietips": "Filmer att bli arg av",
 	"image" : "../images/stills/ilskan.jpg",
-	"vimeo" : "https://player.vimeo.com/video/81109621"
+	"vimeo" : "https://player.vimeo.com/video/81109621",
+	"movies" : [
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		},
+		{
+			"title": "",
+			"poster": "../images/movieposters/",
+			"excerpt": ""
+		}
+	]
 }
 
 

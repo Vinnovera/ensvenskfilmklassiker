@@ -1,9 +1,26 @@
 {
 	"number": 1,
 	"tips": "Glädjen",
-	"movietips": "Bra tips på film",
+	"movietips": "Filmer att skratta åt",
 	"image" : "../images/stills/gladjen.jpg",
-	"vimeo" : "https://player.vimeo.com/video/81109621"
+	"vimeo" : "https://player.vimeo.com/video/81109621",
+	"movies" : [
+		{
+			"title": "The big lebowski",
+			"poster": "../images/movieposters/the-big-l.jpg",
+			"excerpt": "I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing."
+		},
+		{
+			"title": "Mr.Robot",
+			"poster": "../images/movieposters/mr-robot.jpg",
+			"excerpt": "Follows a young computer programmer who suffers from social anxiety disorder and forms connections through hacking. He's recruited by a mysterious anarchist, who calls himself Mr. Robot."
+		},
+		{
+			"title": "The iron giant",
+			"poster": "../images/movieposters/irongiant.jpg",
+			"excerpt": "A boy makes friend with a robot from outer space, but the army are not happy with a robot in the city."
+		}
+	]
 }
 
 

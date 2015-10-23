@@ -4,10 +4,11 @@ function showTip() {
 
 	tips.each(function(){
 		$(this).click(function() {
-
-			$(this).toggleClass('active');
-			$(this).next('.tip-content').toggleClass('open');
-			$('.tip-teaser').toggleClass('thumbs');
+			$('.tips, .tip-teaser, .tip-content').removeClass('open thumbs active');
+			$(this).addClass('active');
+			$(this).next('.tip-content').addClass('open');
+			$('.tips').addClass('open');
+			$('.tip-teaser').addClass('thumbs');
 
 		});
 	});

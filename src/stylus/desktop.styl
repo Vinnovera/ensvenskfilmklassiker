@@ -61,6 +61,12 @@
 .tips {
 	background: $yellow;
 	padding 0;
+	position: relative;
+	
+	&.open{
+		min-height: 100vh;
+		background: black;
+	}
 	
 	.tips-text {
 		display: none;
@@ -75,13 +81,19 @@
 		overflow: hidden;
 		
 		&.thumbs {
-					height: 200px;
-		    		width: calc(60% / 3);
+			height: 200px;
+		    width: calc(100% / 6);
+		 	margin-top: 90vh;
+		    background: black;
 		    		
 		    .number-box {
 				font-size: 17pt;
 				width: 30px;
 				height: 30px;
+		    }
+		    &.active{
+		    	padding: 10px;
+		    	background: $yellow
 		    }
 		}
 
@@ -139,32 +151,30 @@
 	.tip-content {
 			background: $black;
 			display: none;
+			height: 80vh;
+			width: 100%;
 			
 			&.open{
-				display inline-block
-				position: relative;
-				margin-top: -200px;
-	    		z-index: 0;
+				display block;
+				position: absolute;
+				top 0;
+				left: 0;
+				margin: 0;
 			}
 			
-			.youtube-content {
-				text-align: center;
-				background: $white;
-				height: 50vh;
+			.vimeo-content {
+				iframe{
+					min-height: 640px;
+				}
 			}
 			
 			.tip1-content {
-				float: left;
-				width: 50%;
-				padding: 1em;
+				padding: 2em;
 				color: $white;
 				
-				.tip-howto {
-
-				}
-				
-				.movie-tips {
+			.movie-tips {
 					padding-bottom: 2em;
+					float:left
 
 					h2 {
 						font-size: 12pt;
@@ -174,14 +184,13 @@
 					}
 					
 					.movie-posters {
-						outline: 1px solid $white;
-						height: 180px;
+						height: 200px;
 					}
 				}
 			}
 			
 			.share-tip {
-				float: right;
+				float: left;
 				padding-top: 2em;
 				
 				h2 {
