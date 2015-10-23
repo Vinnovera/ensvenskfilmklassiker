@@ -52,7 +52,222 @@
 /*******************************************************/
 /************************* TIP ************************/
 /*******************************************************/
+.movies{
+	background: $black;
+}
 
+.tips-text {
+		color: $white;
+		padding: 20px;
+		font-size: 30pt;
+		font-family: $condensed_font;
+}
+
+
+.tips {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	
+	&.active {
+		position: relative;
+		padding-top: $activeTipHeight;
+		
+		.tip {
+			width: (100% / 5);
+		
+			.teaser {
+				
+				.number-box{
+					font-size: 22pt;
+				}
+				
+				.text-box-title {
+				top: 38%;
+				height: 28px;
+				font-size: 20pt;
+				line-height: 41px;
+					&:before {
+						border-top: 11px solid transparent;
+						border-left: 16px solid black;
+						border-bottom: 11px solid transparent;
+					}
+				}
+			}
+		
+		}
+	}
+		
+	.tip {
+		float: left;
+		width: (100% / 3);
+		padding: 0;
+		margin: 0;
+		background: red;
+		box-sizing: border-box;
+		
+		&.active {
+			border: 10px solid $yellow;
+			
+			.content {
+				display: block;
+			}
+			
+		}
+
+		.teaser {
+			display: block;
+			position: relative;
+			width: 100%;
+			margin: 0;
+			padding: 0 0 100% 0;
+			background-color: $yellow;
+			
+			&:hover {
+				background-image: none !important;
+				
+				.text-box-title {
+					display: block;
+				}
+			}
+
+			.number-box {
+				position: absolute;
+				left: 0;
+				top: 0;
+				margin: 0;
+				width: 35px;
+				height: 35px;
+				text-align: center;
+				font-size: 27pt;
+				line-height: 35px;
+				background: $yellow;
+			}
+			
+			.text-box-title {
+				display: none;
+				position: absolute;
+				top: 42%;
+				left: 20%;
+				height: 50px;
+				font-size: 32pt;
+				line-height: 50px;
+				background: none;
+				float: none;
+				clear: both;
+			}
+
+			.text-box-title:before {
+				content: '';
+				float: left;
+				margin: 10px 5px 5px 13px;
+				border-top: 15px solid transparent;
+				border-left: 25px solid black;
+				border-bottom: 15px solid transparent;
+			}
+		}
+		
+		.content {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			//height: $activeTipHeight;
+			overflow: visible;
+			margin-top: 0;
+			background: black;
+			color: white;
+			.back-btn{
+				color: black
+				border-color: black
+				&:before{
+					border-right: 8px solid black;
+				}
+			}
+			.video {
+				width: 100%;
+				min-height: 640px;
+			}
+			
+			h2 {
+					font-size: 12pt;
+					text-transform: uppercase;
+					border-bottom 2px solid $black;
+					line-height: 40px;
+				}
+			
+			.movie-tips {
+				overflow-x: scroll;
+				
+				.related-movies{
+					width: 900px;
+					
+					.movie-poster {
+						display: inline-block;
+						width: 300px;
+					
+						h3	{
+							text-decoration: underline;
+						    float: left;
+						    padding-left: .5em;
+						    margin: 0;
+						}
+						
+						img {
+							height: 200px;
+							float: left;
+						}
+						
+						.movie-excerpt {
+							float: left;
+						    width: 40%;
+						    font-size: 8pt;
+						    padding: 1em;
+						}
+					}
+				}
+			}
+			
+			.share-tip {
+				padding-top: 2em;
+				
+				h2 {
+					font-size: 12pt;
+					text-transform: uppercase;
+				}
+				
+				input {
+					border: none;
+					border-radius: 2px;
+					height: 28px;
+					width: 120px;
+				}
+				
+				input::-webkit-input-placeholder {
+  					padding-left: 0.5em;
+				}
+				
+				.socialmedia-icons {
+					float: right;
+					margin-top: -5px;
+					
+					img {
+						width: 35px;
+						height: 35px;
+						padding: 3px 5px 3px 3px;
+					}
+				}
+				
+				.next-tip {
+					display: none;
+				}
+			}
+		}
+	}
+	
+}
+/*
 .tips {
 	background: $yellow;
 	padding 0;
@@ -203,7 +418,7 @@
 					width: 140px;
 				}
 				
-				input::-webkit-input-placeholder { /* WebKit browsers */
+				input::-webkit-input-placeholder { WebKit browsers
 						padding-left: 0.5em;
 				}
 				
@@ -253,22 +468,13 @@
 			}
 		}
 }
-
+*/
 /*******************************************************/
 /********************** INSTAGRAM **********************/
 /*******************************************************/
 
 .instagram-feed {	
 	.top-content {		
-		.about-info {
-			display: block;
-			padding: 5%;
-			
-			.about-text {
-				margin: 0 auto;
-				width: 70%;
-			}
-		}
 		
 		.hashtag-box {
 			display: block;
@@ -276,8 +482,6 @@
 			
 			.hashtag-info {
 				width: 100%;
-				padding-top: 1em;
-				padding-bottom: 1em;
 			}
 		}
 		
@@ -351,7 +555,7 @@
 /*********************** WELCOME ***********************/
 /*******************************************************/
 
-.welcome-content {
+.text-block {
 	padding: 3%;
 	font-family: $condensed_font;
 	font-weight: 300;

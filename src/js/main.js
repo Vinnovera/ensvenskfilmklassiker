@@ -1,18 +1,20 @@
 
 function showTip() {
-	var tips = $('.tip-teaser');
+	var tips = $('.teaser');
 
 	tips.each(function(){
-		$(this).click(function() {
-			$('.tips, .tip-teaser, .tip-content').removeClass('open thumbs active');
-			$(this).addClass('active');
-			$(this).next('.tip-content').addClass('open');
-			$('.tips').addClass('open');
-			$('.tip-teaser').addClass('thumbs');
-
+		$(this).click(function(e) {
+			e.preventDefault();
+			$('.tips, .tip').removeClass('active');
+			$(this).parent().addClass('active');
+			$('.tips').addClass('active');
 		});
 	});
 
+	$('.back-btn').click(function(e) {
+		e.preventDefault();
+		$('.tips, .tip').removeClass('active');
+	});
 
 }
 

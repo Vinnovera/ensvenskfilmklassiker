@@ -7,12 +7,12 @@ $black = #000000
 $turquoise = #70bd95
 $yellow = #fed061
 $red = #FF453E
-$green = #70bd95
+$green = $turquoise
 
 $regular_font = "Gotham A", "Gotham B", sans-serif
 $condensed_font = "Gotham Cond A", "Gotham Cond B", sans-serif
 
-$activeTipHeight = 1000px
+$activeTipHeight = 1200px
 
 body {
 	font-family: $regular_font
@@ -26,6 +26,15 @@ body {
 
 h1,h2,h3{
 	font-family: $condensed_font
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	max-width: 80%;
+	padding: 0 10%;
+}
+
+h2 {
+	font-size 2em;
 }
 
 
@@ -99,7 +108,7 @@ h1,h2,h3{
 	color: black;
 }
 
-.welcome-content {
+.text-block {
 	padding: 10%;
 	font-family: $condensed_font;
 	font-weight: 300;
@@ -115,106 +124,139 @@ h1,h2,h3{
 
 
 /*******************************************************/
-/********************* SINGLE TIP **********************/
+/********************* MOVIES***************************/
 /*******************************************************/
+.movies{
+	background: $black;
+}
+
+.tips-text {
+		color: $white;
+		padding: 20px;
+		font-size: 30pt;
+		font-family: $condensed_font;
+}
+
 
 .tips {
-	padding: 0;
+	padding: 1em 0;
 	margin: 0;
 	list-style: none;
-	
-	&.active {
+	background: black;
+	/*
+		MODAL OVERLAY&
+		.active {
 		position: relative;
-		padding-top: $activeTipHeight;
-		
-		.tip {
-			width: 20%;
-			
-
+		z-index: 1;
+		.tip.active .teaser{
+			display: none
 		}
-	}
-		
+		.content{
+			position: relative;
+			
+				
+				&:after{
+				position: fixed
+				z-index: -1;
+				background: rgba(0,0,0,0.5);
+				content: '';
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+			
+			}
+		}
+	}*/
 	.tip {
-		float: left;
-		width: 33.333333333333%;
 		padding: 0;
-		margin: 0;
-		background: red;
+		margin: 2em 0;
 		box-sizing: border-box;
 		
 		&.active {
-			border: 5px solid $yellow;
 			
 			.content {
 				display: block;
 			}
+			
 		}
-
+		
 		.teaser {
 			display: block;
 			position: relative;
-			width: 100%;
-			padding-bottom: 100%;
-			background-color: $yellow;
+			width: 90%;
+			margin-left: 10%;
+			padding: 40% 0 20% 0;
 			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
 			font-family: $condensed_font;
 			font-weight: 500;
 			text-decoration: none;
-			color: white !important;
+			color: black;
+			text-transform: uppercase;
 			
-			&:hover {
-				background-image: none !important;
-				
-				.text-box-title {
-					display: block;
-				}
-			}
-
-			.number-box {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 35px;
+			.number-box, .text-box-title{
+				float: left;
+				display: block;
 				height: 35px;
+			}
+			
+			.number-box {
+				margin: 0 7px 0 -5%;
 				text-align: center;
-				font-size: 20px;
-				line-height: 35px;
+				font-size: 20pt;
 				background: $yellow;
+				width: 35px;
 			}
 			
 			.text-box-title {
-				display: none;
-				position: absolute;
-				top: 42%;
-				left: 20%;
-				height: 50px;
-				font-size: 32pt;
-				line-height: 50px;
-				background: none;
-				float: none;
-				clear: both;
+				font-size: 20pt;
+				background: $turquoise;
+				color: black;
+				padding-right: 10px;
+				line-height: 35px;
+				text-transform: uppercase;
 			}
 
 			.text-box-title:before {
 				content: '';
 				float: left;
-				margin: 5px 5px 5px 13px;
-				border-top: 20px solid transparent;
-				border-left: 30px solid white;
-				border-bottom: 20px solid transparent;
+				margin: 7px 5px 5px 13px;
+				border-top: 10px solid transparent;
+				border-left: 14px solid black;
+				border-bottom: 10px solid transparent;
 			}
 		}
 		
 		.content {
 			display: none;
-			position: absolute;
-			left: 0;
-			top: 0;
 			width: 100%;
-			height: $activeTipHeight;
-			overflow: hidden;
+			overflow: visible;
+			background: $yellow;
+			margin-top: 50px;
+			padding-bottom: 2em;
+			position: relative;
+			.back-btn{
+				position: absolute;
+				font-family: $condensed_font;
+				color: white;
+				top: -34px;
+				right: 5px;
+				text-transform: uppercase;
+				font-size: 14pt;
+				padding-right: 1px;
+				border-bottom: 2px solid white;
+				cursor: pointer;
+				&:before {
+					content: '';
+					float: left;
+					margin: 7px 5px 5px 3px;
+					border-top: 5px solid transparent;
+					border-right: 8px solid white;
+					border-bottom: 5px solid transparent;
+				}
+			}
 
 			.video {
 				width: 100%;
@@ -297,15 +339,8 @@ h1,h2,h3{
 		}
 	}
 	
-
+}
 /*	
-	.tips-text {
-		color: $white;
-		padding: 20px;
-		font-size: 30pt;
-		font-family: $condensed_font;
-	}
-	
 	.tip-teaser {
 		position: relative;
 		
@@ -462,7 +497,7 @@ h1,h2,h3{
 				}
 			}
 		}*/
-}
+
 
 .hidden {
 	display: none;
@@ -513,8 +548,9 @@ h1,h2,h3{
 	}
 	
 	&.neg{
-		
-		background: url('../images/arrow.svg');
+		p:after{
+			background-image: url('../images/arrow.svg');
+		}
 		background-color: $turquoise;
 		color: white;
 	}
@@ -528,26 +564,13 @@ h1,h2,h3{
 .instagram-feed {
 	background: $black;
 	width: 100%;
+	font-family: $condensed_font;
+	color: $turquoise;
 	
 	.top-content {
 		width: 100%;
 		padding: 2em 0 0 0;
-		
-		.about-info {			
-			.about-text {
-				color: $green
-				font-size: 1.8em;
-			}
-		}
-		
-		.hashtag-box {			
-			.hashtag-info {
-				font-size: 1.4em;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $green;
-			}
-		}
+
 		
 		.instagram-box {			
 			.all-images {
