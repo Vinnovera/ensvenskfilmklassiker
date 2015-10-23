@@ -4,13 +4,17 @@
 
 $white = #ffffff
 $black = #000000
-$turquoise = #B0F7E7
-$yellow = #EDD400
+$turquoise = #70bd95
+$yellow = #fed061
 $red = #FF453E
 $green = #70bd95
 
+regular_font = "Gotham A", "Gotham B", sans-serif
+condensed_font = "Gotham Cond A", "Gotham Cond B", sans-serif
+
+
 body {
-	font-family: "Verlag A", "Verlag B";
+	font-family: regular_font
 	
 	p {
 		margin: 0;
@@ -19,6 +23,10 @@ body {
 	
 	
 	
+}
+
+h1,h2,h3{
+	font-family: condensed_font
 }
 
 
@@ -30,4 +38,68 @@ body {
 .dates {
 	background: $yellow;
 	width: 100%;
+}
+
+/*******************************************************/
+/********************** INSTAGRAM **********************/
+/*******************************************************/
+
+.instagram-feed {
+	background: $black;
+	width: 100%;
+	
+	.top-content {
+		width: 100%;
+		padding: 2em 0 0 0;
+		
+		.about-info {			
+			.about-text {
+				color: $green
+				font-size: 1.8em;
+			}
+		}
+		
+		.hashtag-box {			
+			.hashtag-info {
+				font-size: 1.4em;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $green;
+			}
+		}
+		
+		.instagram-box {			
+			.all-images {
+				#instafeed {
+					a {
+						float: left;
+					}
+				}
+		
+				.more-images {
+					color: black;
+					background: $green;
+					float: left;
+					font-size: 1.2em;
+					margin: 0;
+					text-align: center;
+					text-transform: uppercase;
+					text-decoration: none;
+					vertical-align: middle;
+					
+					&:after {
+						clear: both;
+						content: '';
+						display: table;
+					}
+				}
+				
+				&:after {
+					clear: both;
+					content: '';
+					display: table;
+				}
+			}
+		}
+	}
 }

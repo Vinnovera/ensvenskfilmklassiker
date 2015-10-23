@@ -427,21 +427,15 @@
 /********************** INSTAGRAM **********************/
 /*******************************************************/
 
-.instagram-feed {
-	background: $black;
-	width: 100%;
-	
-	.top-content {
-		width: 100%;
-		
+.instagram-feed {	
+	.top-content {		
 		.about-info {
-			display: inline-block;
-			width: 20%;
+			display: block;
+			padding: 5%;
 			
 			.about-text {
-			color: $white;
-			padding: 5%;
-			font-size: 1.8em;
+				margin: 0 auto;
+				width: 50%;
 			}
 		}
 		
@@ -450,47 +444,34 @@
     		text-align: center;
 			
 			.hashtag-info {
-				font-size: 1.4em;
-				font-weight: bold;
 				width: 100%;
-				text-transform: uppercase;
 				padding-top: 1em;
 				padding-bottom: 1em;
-				color: $red;
 			}
 		}
 		
 		.instagram-box {
-			display: inline-block;
-			width: 70%;
+			width: 100%;
 			
-			#instafeed {
-
-				a {
-					float: left;
-					img {
-
-					}
-				
-					&:after {
-						clear: both;
-						content: '';
-						display: table;
+			.all-images {
+				#instafeed {
+					a {
+						width: 12.5%;
+						
+						img {
+							width: 100%;
+							height: auto;
+						}
 					}
 				}
-			}
-	
-			.more-images {
-				color: white;
-				background: black;
-				float: left;
-				height: 150px;
-				line-height: 150px;
-				margin: 0;
-				text-align: center;
-				text-decoration: none;
-				vertical-align: middle;
-				width: 150px;
+		
+				.more-images {
+					position: relative;
+					right: 0;
+					bottom: 0;
+					width: 12.5%;
+					margin: 0;
+				}
 			}
 		}
 	}
