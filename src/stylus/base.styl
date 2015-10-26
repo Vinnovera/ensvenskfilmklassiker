@@ -620,26 +620,36 @@ h2 {
 
 .footer-content {
 	background: black;
+	font-family: $condensed_font;
+	font-weight: 500;
+	padding: 10% 5%;
+	text-align: center;
 	
 	h2 {
+		margin: 0;
 		padding-top: 2em;
-		text-align: center;
-		margin: 0 auto;
-		color: $yellow;
+		color: $green;
+	}
+	
+	p {
+		color: $green;
+		font-size: 1.5em;
+		text-transform: uppercase;
 	}
 	
 	.footer-logo{
-		margin: 0 auto;
 		display: block;
+		margin: 3em auto;
+		height: 125px;
+		max-width: 220px;
+		width: 60%;
 	}
 	
 	.logo-smicker {
-		margin-top: 3em;
-		width: 40%;
+		background: url("../images/smicker_logo.svg") no-repeat center center;
 	}
 	
 	.logo-vinnovera {
-		margin-top: 3em;
-		width: 40%;
+		background: url("../images/vinnovera_standing_logo.svg") no-repeat center center;
 	}
 }
