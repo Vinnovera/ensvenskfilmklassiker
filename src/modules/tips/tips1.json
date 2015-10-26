@@ -1,9 +1,9 @@
 {
 	"number": 1,
-	"tips": "Glädjen",
-	"url": "/tips/gladjen",
+	"tips": "Glädje",
+	"url": "/tips/gladje",
 	"movietips": "Filmer att skratta åt",
-	"image" : "/images/stills/gladjen.jpg",
+	"image" : "/images/gifs/gladje.gif",
 	"vimeo" : "https://player.vimeo.com/video/81109621",
 	"movies" : [
 		{
