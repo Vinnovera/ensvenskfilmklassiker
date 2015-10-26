@@ -274,14 +274,38 @@
 					}
 				}
 				
-				&:after {
-					clear: both;
-					content: '';
-					display: table;
-				}
-				
 				.next-tip {
-					display: none;
+					display: block;
+					margin-top: 150px;
+					margin-left: 25px;
+					
+					a {
+						text-decoration: none;
+					}
+					
+					.next-tip-text {
+						color: $white;
+						margin-left: -14px;
+						text-transform: uppercase;
+					}
+					
+					.next-tip-teaser {
+						color: $white;
+						margin-left: 15px;
+    					margin-top: 5px;
+    					text-transform: uppercase;
+
+					}
+					
+					&:before {
+						content: '';
+						position: absolute;
+						float: none;
+						margin: 20px 5px 5px -.8em;
+						border-top: 15px solid transparent;
+						border-left: 25px solid $turquoise;
+						border-bottom: 15px solid transparent;
+					}
 				}
 			}
 		}
