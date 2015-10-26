@@ -209,7 +209,8 @@
 				}
 			
 			.movie-tips {
-				overflow-x: scroll;
+				width: 70%;
+				float: left;
 				
 				.related-movies{
 					width: 900px;
@@ -241,7 +242,10 @@
 			}
 			
 			.share-tip {
-				padding-top: 2em;
+				margin-top: -4em;
+				padding-top 0;
+				width: 30%;
+				float: right;
 				
 				h2 {
 					font-size: 12pt;
@@ -268,6 +272,12 @@
 						height: 35px;
 						padding: 3px 5px 3px 3px;
 					}
+				}
+				
+				&:after {
+					clear: both;
+					content: '';
+					display: table;
 				}
 				
 				.next-tip {
