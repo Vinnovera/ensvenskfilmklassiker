@@ -1,41 +1,61 @@
+!function(w, d, $) {
 
-function showTip() {
-	var tips = $('.teaser');
+	var $tipsWrapper, $tips;
 
-	tips.each(function(){
-		$(this).click(function(e) {
-			e.preventDefault();
-			$('.tips, .tip').removeClass('active');
-			$(this).parent().addClass('active');
-			$('.tips').addClass('active');
-		});
+	$(d).on('ready', function() {
+		$tipsWrapper = $('.tips');
+		$tips = $tipsWrapper.find('.tip');
+
+		bindEvents();
+		instaFeed();
 	});
 
-	$('.back-btn').click(function(e) {
+	function bindEvents() {
+		$tipsWrapper.on('click', '.tip .teaser', onTipClick);
+		$tipsWrapper.on('click', '.tip .back-btn', onBackClick);
+	}
+
+	function onTipClick(e) {
 		e.preventDefault();
-		$('.tips, .tip').removeClass('active');
-	});
 
-}
+		deactivateTips();
+		activateTip($(this).closest('.tip'));
+		updateHistory($(this).attr('href'));
+	}
 
-function instaFeed() {
-	var clientId = 'd06ee162a3bb4abdbe112230442c0a77';
-	var feed = new Instafeed({
-		get: 'tagged',
-		tagName: 'stockholmfilmfestival',
-		limit: 23,
-		sortBy: 'most-recent',
-		resolution: 'standard_resolution',
-		clientId: clientId
-	});
+	function onBackClick(e) {
+		e.preventDefault();
 
-	feed.run();
-}
+		deactivateTips();
+		updateHistory($(this).attr('href'));
+	}
+
+	function activateTip($tip) {
+		$tipsWrapper.addClass('active');
+		$tip.addClass('active');
+	}
+
+	function deactivateTips() {
+		$tipsWrapper.removeClass('active');
+		$tips.removeClass('active');
+	}
+
+	function updateHistory(url) {
+		window.history.replaceState(null, null, url);
+	}
 
 
-$(document).ready(function() {
-	instaFeed();
-	showTip();
-	
-});
+	function instaFeed() {
+		var clientId = 'd06ee162a3bb4abdbe112230442c0a77';
+		var feed = new Instafeed({
+			get: 'tagged',
+			tagName: 'stockholmfilmfestival',
+			limit: 23,
+			sortBy: 'most-recent',
+			resolution: 'standard_resolution',
+			clientId: clientId
+		});
 
+		feed.run();
+	}
+}(window, document, Zepto);
