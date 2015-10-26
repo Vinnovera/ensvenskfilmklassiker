@@ -109,6 +109,14 @@
 		&.active {
 			border: 10px solid $yellow;
 			
+			.teaser{
+				padding: 38% 0 40.56% 0;
+				.number-box{
+					top: -10px;
+					left: -10px;
+				}
+			}
+			
 			.content {
 				display: block;
 			}
@@ -120,14 +128,16 @@
 			position: relative;
 			width: 100%;
 			margin: 0;
-			padding: 0 0 100% 0;
+			padding: 38% 0 42% 0;
 			background-color: $yellow;
+			text-align: center;
 			
 			&:hover {
 				background-image: none !important;
 				
 				.text-box-title {
-					display: block;
+					display: inline-block;
+					visibility: visible;
 				}
 			}
 
@@ -136,22 +146,22 @@
 				left: 0;
 				top: 0;
 				margin: 0;
-				width: 35px;
-				height: 35px;
+				width: 42px;
+				height: 42px;
 				text-align: center;
 				font-size: 27pt;
-				line-height: 35px;
+				line-height: 42px;
 				background: $yellow;
 			}
 			
 			.text-box-title {
-				display: none;
-				position: absolute;
-				top: 42%;
-				left: 20%;
-				height: 50px;
+				display: inline-block;
+				visibility: hidden;
+				position: relative;
+				height: 0;
 				font-size: 32pt;
 				line-height: 50px;
+				padding-left: .8em;
 				background: none;
 				float: none;
 				clear: both;
@@ -159,8 +169,9 @@
 
 			.text-box-title:before {
 				content: '';
-				float: left;
-				margin: 10px 5px 5px 13px;
+				position: absolute;
+				float: none;
+				margin: 10px 5px 5px -.8em;
 				border-top: 15px solid transparent;
 				border-left: 25px solid black;
 				border-bottom: 15px solid transparent;
