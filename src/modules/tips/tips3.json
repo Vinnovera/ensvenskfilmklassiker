@@ -1,23 +1,24 @@
 {
 	"number": 3,
 	"tips": "Skräcken",
+	"url": "/tips/skracken",
 	"movietips": "Filmer att bli rädd av",
-	"image" : "../images/stills/skracken.jpg",
+	"image" : "/images/stills/skracken.jpg",
 	"vimeo" : "https://player.vimeo.com/video/81109621",
 	"movies" : [
 		{
 			"title": "The big lebowski",
-			"poster": "../images/movieposters/the-big-l.jpg",
+			"poster": "/images/movieposters/the-big-l.jpg",
 			"excerpt": "I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing."
 		},
 		{
 			"title": "Mr.Robot",
-			"poster": "../images/movieposters/mr-robot.jpg",
+			"poster": "/images/movieposters/mr-robot.jpg",
 			"excerpt": "Follows a young computer programmer who suffers from social anxiety disorder and forms connections through hacking. He's recruited by a mysterious anarchist, who calls himself Mr. Robot."
 		},
 		{
 			"title": "The iron giant",
-			"poster": "../images/movieposters/irongiant.jpg",
+			"poster": "/images/movieposters/irongiant.jpg",
 			"excerpt": "A boy makes friend with a robot from outer space, but the army are not happy with a robot in the city."
 		}
 	]
