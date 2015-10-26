@@ -80,7 +80,7 @@ h2 {
 				font-family: $condensed_font;
 				font-weight: 300;
 				font-style: normal;
-				font-size: 2em;
+				font-size: 2.2em;
 				padding: 1em 0;
 			}
 		}
@@ -108,7 +108,7 @@ h2 {
 		p {
 			padding-bottom: 1em;
 			font-size: 1.4em;
-			line-height: 1.5em;
+			line-height: 1.4em;
 			max-width: 600px;
 			margin: 0 auto;
 		}
@@ -133,7 +133,7 @@ h2 {
 
 
 .tips {
-	padding: 1em 0;
+	padding: 0;
 	margin: 0;
 	list-style: none;
 	background: black;
@@ -164,7 +164,7 @@ h2 {
 	}*/
 	.tip {
 		padding: 0;
-		margin: 2em 0;
+		margin: 0 0 2em;
 		box-sizing: border-box;
 		
 		&.active {
@@ -178,8 +178,8 @@ h2 {
 		.teaser {
 			display: block;
 			position: relative;
-			width: 90%;
-			margin-left: 10%;
+			width: 100%;
+			margin-left: 0;
 			padding: 40% 0 20% 0;
 			background-position: center center;
 			background-size: cover;
@@ -197,7 +197,7 @@ h2 {
 			}
 			
 			.number-box {
-				margin: 0 7px 0 -5%;
+				margin: 0 7px 0 0;
 				text-align: center;
 				font-size: 20pt;
 				background: $yellow;
@@ -211,6 +211,7 @@ h2 {
 				padding-right: 10px;
 				line-height: 35px;
 				text-transform: uppercase;
+				min-width: 90px;
 			}
 
 			.text-box-title:before {
@@ -364,10 +365,10 @@ h2 {
 	width: 80%;
 	font-family: $condensed_font;
 	text-transform: uppercase;
-	font-size: 18pt;
+	font-size: 22pt;
 	text-decoration: none;
-	font-weight: 400;
-	letter-spacing: .1em;
+	font-weight: 500;
+	letter-spacing: 0.03em;
 	cursor: pointer;
 	p {
 		margin: 0;
@@ -460,7 +461,7 @@ h2 {
 .dates {
 	background: $turquoise;
 	font-family: $condensed_font;
-	font-size: 2em;
+	font-size: 1.8em;
 	width: 100%;
 	
 	.dates-content {
@@ -476,7 +477,6 @@ h2 {
 		
 		p {
 			color: $white;
-			letter-spacing: 0.05em;
 			margin: 1em auto;
 			text-transform: uppercase;
 			line-height: 35px;
@@ -492,28 +492,36 @@ h2 {
 .footer-content {
 	background: black;
 	font-family: $condensed_font;
-	font-weight: 500;
+	font-weight: 300;
 	padding: 10% 5%;
 	text-align: center;
 	
 	h2 {
-		margin: 0;
+		margin: 0 0 .3em;
 		padding-top: 2em;
 		color: $turquoise;
+		font-size: 1.8em;
 	}
 	
 	p {
 		color: $turquoise;
 		font-size: 1.5em;
 		text-transform: uppercase;
+		&.bigger{
+			font-size: 2.2em;
+		}
 	}
 	
-	.footer-logo{
+	.footer-logos{
+		padding: .5em 0 2em;
 		display: block;
-		margin: 3em auto;
-		height: 125px;
-		max-width: 220px;
-		width: 60%;
+		a{
+			display: block;
+			margin: 1em auto;
+			height: 50px;
+			max-width: 140px;
+			width: 60%;
+		}
 	}
 	
 	.logo-smicker {
@@ -521,6 +529,6 @@ h2 {
 	}
 	
 	.logo-vinnovera {
-		background: url(/images/vinnovera_standing_logo.svg) no-repeat center center;
+		background: url(/images/vinnovera_logo.svg) no-repeat center center;
 	}
 }
