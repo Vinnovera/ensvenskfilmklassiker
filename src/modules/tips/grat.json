@@ -18,21 +18,21 @@
 			"name": "SARAH GAVRON",
 			"poster": "/images/movieposters/the-big-l.jpg",
 			"excerpt": "En film om hur kvinnorna i England under 1900-talets början kämpade för rösträtt och självständighet.",
-			"url": "free_in_deed"
+			"url": "suffragette"
 		},
 		{
 			"title": "Me and Earl and the Dying Girl",
 			"name": "ALFONSO GOMEZ-REJON",
 			"poster": "/images/movieposters/mr-robot.jpg",
 			"excerpt": "Charmig amerikansk indie om vänskap, spirande känslor och sjukdom.",
-			"url": "free_in_deed"
+			"url": "me_and_earl_and_the_dying_girl"
 		},
 		{
 			"title": "The Price of Love",
 			"name": "HERMON HAILAY",
 			"poster": "/images/movieposters/irongiant.jpg",
 			"excerpt": "En taxichaufför och en prostituerad ger sig ut på en osannolik jakt när en taxibil blir stulen.",
-			"url": "free_in_deed"
+			"url": "price_of_love_2015"
 		}
 	]
 }

@@ -18,21 +18,21 @@
 			"name": "ALICE WINOCOUR",
 			"poster": "/images/movieposters/the-big-l.jpg",
 			"excerpt": "Paranoid thriller om en traumatiserad ex-soldat som blir livvakt åt stenrika troféhustrun Jessie.",
-			"url": "free_in_deed"
+			"url": "maryland"
 		},
 		{
 			"title": "The Program",
 			"name": "STEPHEN FREARS",
 			"poster": "/images/movieposters/mr-robot.jpg",
 			"excerpt": "Tidernas största fuskare Lance Armstrongs uppgång och fall.",
-			"url": "free_in_deed"
+			"url": "the_program_2015"
 		},
 		{
 			"title": "The Lobster",
 			"name": "YORGOS LANTHIMOS",
 			"poster": "/images/movieposters/irongiant.jpg",
 			"excerpt": "Deras ultimatum: finn en partner inom 45 dagar eller förvandlas till ett självvalt djur.",
-			"url": "free_in_deed"
+			"url": "the_lobster"
 		}
 	]
 }
