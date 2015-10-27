@@ -10,30 +10,30 @@
 	
 	<div class="tip-info">
 	
-	<div class="share-tip">
-		<h2>Dela med dig</h2>
-		<input type="text" value="http://ensvenskfilmklassiker.se/{{=it.url}}">
-		<div class="socialmedia-icons">
-			<img src="/images/socialmedia/facebook_w_circle_32px.svg">
-			<img src="/images/socialmedia/twitter_w_circle_32px.svg">
-			<img src="/images/socialmedia/mail_w_circle_32px.svg">
-		</div>
-		{{? it.next}}
-			<div class="next-tip">
-				<a href="{{=it.next.url}}#tips" title="nästa filmtips" class="next-btn">
-					<p class="next-tip-text">Nästa tips</p>
-					<p class="next-tip-teaser">{{=it.next.title}}</p>
-				</a>
+		<div class="share-tip">
+			<h2>Dela</h2>
+			<input type="text" value="http://ensvenskfilmklassiker.se/{{=it.url}}">
+			<div class="socialmedia-icons">
+				<img src="/images/socialmedia/facebook_w_circle_32px.svg">
+				<img src="/images/socialmedia/twitter_w_circle_32px.svg">
+				<img src="/images/socialmedia/mail_w_circle_32px.svg">
 			</div>
-		{{?}}
-	</div>
+			{{? it.next}}
+				<div class="next-tip">
+					<a href="{{=it.next.url}}#tips" title="nästa filmtips" class="next-btn">
+						<p class="next-tip-text">Nästa tips</p>
+						<p class="next-tip-teaser">{{=it.next.title}}</p>
+					</a>
+				</div>
+			{{?}}
+		</div>
 
 	</div>
 	<h2>{{=it.movietips}}</h2>
 	<div class="movie-tips">
 		<div class="related-movies">
 			{{~it.movies :movie}}
-				<div class="movie-poster">
+				<div class="movie">
 					<img src="{{=movie.poster}}">
 					<h3>{{=movie.title}}</h3>
 					<h4>{{=movie.name}}</h4>
