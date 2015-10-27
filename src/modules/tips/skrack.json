@@ -14,24 +14,24 @@
 	},
 	"movies" : [
 		{
-			"title": "The big lebowski",
-			"name": "Alicia Vikander",
+			"title": "The Survivalist",
+			"name": "STEPHEN FINGLETON",
 			"poster": "/images/movieposters/the-big-l.jpg",
-			"excerpt": "I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing.",
+			"excerpt": "Paranoida The survivalist lever isolerad i en dystopisk värld där enda målet är att inte svälta ihjäl.",
 			"url": "free_in_deed"
 		},
 		{
-			"title": "Mr.Robot",
-			"name": "Alicia Vikander",
+			"title": "Horror Night Deluxe",
+			"name": "William Friedkin, Daniel di Grado, Can Evrenol",
 			"poster": "/images/movieposters/mr-robot.jpg",
-			"excerpt": "Follows a young computer programmer who suffers from social anxiety disorder and forms connections through hacking. He's recruited by a mysterious anarchist, who calls himself Mr. Robot.",
+			"excerpt": "Fredag den 13:e innebär skräckmaraton! Exorcisten, Alena och Baskin i en sittning.",
 			"url": "free_in_deed"
 		},
 		{
-			"title": "The iron giant",
-			"name": "Alicia Vikander",
+			"title": "The Wave",
+			"name": "ROAR UTHAUG",
 			"poster": "/images/movieposters/irongiant.jpg",
-			"excerpt": "A boy makes friend with a robot from outer space, but the army are not happy with a robot in the city.",
+			"excerpt": "Skandinaviens första katastroffilm. Norska fjordbyn Geiranger räds ännu ett katastrofalt jordskred.",
 			"url": "free_in_deed"
 		}
 	]

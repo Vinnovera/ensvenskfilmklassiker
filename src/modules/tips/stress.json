@@ -14,24 +14,24 @@
 	},
 	"movies" : [
 		{
-			"title": "The big lebowski",
-			"name": "Alicia Vikander",
+			"title": "Maryland",
+			"name": "ALICE WINOCOUR",
 			"poster": "/images/movieposters/the-big-l.jpg",
-			"excerpt": "I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing.",
+			"excerpt": "Paranoid thriller om en traumatiserad ex-soldat som blir livvakt åt stenrika troféhustrun Jessie.",
 			"url": "free_in_deed"
 		},
 		{
-			"title": "Mr.Robot",
-			"name": "Alicia Vikander",
+			"title": "The Program",
+			"name": "STEPHEN FREARS",
 			"poster": "/images/movieposters/mr-robot.jpg",
-			"excerpt": "Follows a young computer programmer who suffers from social anxiety disorder and forms connections through hacking. He's recruited by a mysterious anarchist, who calls himself Mr. Robot.",
+			"excerpt": "Tidernas största fuskare Lance Armstrongs uppgång och fall.",
 			"url": "free_in_deed"
 		},
 		{
-			"title": "The iron giant",
-			"name": "Alicia Vikander",
+			"title": "The Lobster",
+			"name": "YORGOS LANTHIMOS",
 			"poster": "/images/movieposters/irongiant.jpg",
-			"excerpt": "A boy makes friend with a robot from outer space, but the army are not happy with a robot in the city.",
+			"excerpt": "Deras ultimatum: finn en partner inom 45 dagar eller förvandlas till ett självvalt djur.",
 			"url": "free_in_deed"
 		}
 	]

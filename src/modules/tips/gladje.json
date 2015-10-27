@@ -14,24 +14,24 @@
 	},
 	"movies" : [
 		{
-			"title": "The big lebowski",
-			"name": "Alicia Vikander",
+			"title": "Dope",
+			"name": "RICK FAMUYIWA",
 			"poster": "/images/movieposters/the-big-l.jpg",
-			"excerpt": "I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing.",
+			"excerpt": "Årets Dear White People om 90-talsdyrkande hiphoparen Malcolm som råkar komma över ett parti droger.",
 			"url": "free_in_deed"
 		},
 		{
-			"title": "Mr.Robot",
-			"name": "Alicia Vikander",
+			"title": "The Diary of a Teenage Girl",
+			"name": "MARIELLE HELLER",
 			"poster": "/images/movieposters/mr-robot.jpg",
-			"excerpt": "Follows a young computer programmer who suffers from social anxiety disorder and forms connections through hacking. He's recruited by a mysterious anarchist, who calls himself Mr. Robot.",
+			"excerpt": "Öppen och ärlig skildring av en 15-årig flicka som inleder ett förhållande med sin mammas kille.",
 			"url": "free_in_deed"
 		},
 		{
-			"title": "The iron giant",
-			"name": "Alicia Vikander",
+			"title": "Closet Monster",
+			"name": "STEPHEN DUNN",
 			"poster": "/images/movieposters/irongiant.jpg",
-			"excerpt": "A boy makes friend with a robot from outer space, but the army are not happy with a robot in the city.",
+			"excerpt": "Oscar flyr sin hemstad och sin fars dömande åsikter för att utforska sin sexualitet.",
 			"url": "free_in_deed"
 		}
 	]
