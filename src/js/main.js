@@ -10,6 +10,8 @@
 		instaFeed();
 	});
 
+	window.onYouTubeIframeAPIReady = function() {};
+
 	function bindEvents() {
 		$tipsWrapper.on('click', '.tip .teaser', onTipClick);
 		$tipsWrapper.on('click', '.tip .back-btn', onBackClick);
@@ -22,16 +24,22 @@
 		var $tip = $(this).closest('.tip');
 
 		deactivateTips();
+		stopTipVideos();
 		updateScreenings($tip);
 		activateTip($tip);
 		updateHistory($(this).attr('href'));
-		scrollToTip($tip);
+		scrollToTip($tip, function() {
+			loadTipVideo($tip, function() {
+				playTipVideo($tip);
+			});
+		});
 	}
 
 	function onBackClick(e) {
 		e.preventDefault();
 
 		deactivateTips();
+		stopTipVideos();
 		updateHistory($(this).attr('href'));
 	}
 
@@ -43,9 +51,55 @@
 			$tip = getTipByUrl(url);
 
 		deactivateTips();
-		activateTip(url);
+		stopTipVideos();
+		activateTip($tip);
 		updateHistory(url);
-		scrollToTip($tip);
+		scrollToTip($tip, function() {
+			loadTipVideo($tip, function() {
+				playTipVideo($tip);
+			});
+		});
+	}
+
+	function loadTipVideo($tip, callback) {
+		callback = callback || function() {};
+
+		var video = $tip.data('video');
+
+		if (!video) {
+			var
+				$video  = $tip.find('.video'),
+				videoId = $video.data('videoid');
+
+			video = new YT.Player($video.get(0), {
+				videoId: videoId,
+				events: {
+					'onReady': callback
+				}
+			});
+
+			$tip.data('video', video);
+		} else {
+			setTimeout(callback, 0);
+		}
+	}
+
+	function playTipVideo($tip) {
+		var video = $tip.data('video');
+
+		if (video) {
+			video.playVideo();
+		}
+	}
+
+	function stopTipVideos() {
+		$tips.each(function() {
+			var video = $(this).data('video');
+
+			if (video) {
+				video.stopVideo();
+			}
+		});
 	}
 
 	function deactivateTips() {
@@ -76,10 +130,16 @@
 		window.history.replaceState(null, null, url);
 	}
 
-	function scrollToTip($tip) {
-		$('html, body').animate({
-			scrollTop: $tip.find('.content').offset().top
-		}, 500);
+	function scrollToTip($tip, callback) {
+		callback = callback || function() {};
+
+		$('html, body').animate(
+			{
+				scrollTop: $tip.find('.content').offset().top
+			},
+			500,
+			callback
+		);
 	}
 
 	function instaFeed() {
