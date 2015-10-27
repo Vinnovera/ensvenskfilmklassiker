@@ -4,25 +4,15 @@
 </a>
 
 <div class="content">
-	<a href="/" class="back-btn" title="tillbaka">Tillbaka</a>
+	<a href="/" class="back-btn" title="Stäng">Stäng</a>
 
 	<iframe class="video" id="ytplayer" type="text/html" src="http://www.youtube.com/embed/{{=it.video}}?origin=http://ensvenskfilmklassiker.se&autohide=1&color=white&theme=light" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-	<h2>{{=it.movietips}}</h2>
-	<div class="movie-tips">
-		<div class="related-movies">
-			{{~it.movies :movie}}
-				<div class="movie-poster">
-					<img src="{{=movie.poster}}">
-					<h3>{{=movie.title}}</h3>
-					<p class="movie-excerpt">{{=movie.excerpt}}</p>
-				</div>
-			{{~}}
-		</div>
-	</div>
+	
+	<div class="tip-info">
+	
 	<div class="share-tip">
 		<h2>Dela med dig</h2>
-		<input type="text" placeholder="sff.se/gladje">
+		<input type="text" value="http://ensvenskfilmklassiker.se/{{=it.url}}">
 		<div class="socialmedia-icons">
 			<img src="/images/socialmedia/facebook_w_circle_32px.svg">
 			<img src="/images/socialmedia/twitter_w_circle_32px.svg">
@@ -37,4 +27,25 @@
 			</div>
 		{{?}}
 	</div>
+
+	</div>
+	<h2>{{=it.movietips}}</h2>
+	<div class="movie-tips">
+		<div class="related-movies">
+			{{~it.movies :movie}}
+				<div class="movie-poster">
+					<img src="{{=movie.poster}}">
+					<h3>{{=movie.title}}</h3>
+					<h4>{{=movie.name}}</h4>
+					<p class="movie-excerpt">{{=movie.excerpt}}</p>
+					<div class="showing">
+						<h4>Nästa visning</h4>
+						<p>13 nov kl 18</p>
+						<a href="http://www.stockholmfilmfestival.se/sv/festival/2015/film/{{=movie.url}}" target="blank">Köp biljett</a>
+					</div>
+				</div>
+			{{~}}
+		</div>
+	</div>
+
 </div>

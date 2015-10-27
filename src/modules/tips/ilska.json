@@ -14,18 +14,24 @@
 	"movies" : [
 		{
 			"title": "The big lebowski",
+			"name": "Alicia Vikander",
 			"poster": "/images/movieposters/the-big-l.jpg",
-			"excerpt": "I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing."
+			"excerpt": "I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing.",
+			"url": "free_in_deed"
 		},
 		{
 			"title": "Mr.Robot",
+			"name": "Alicia Vikander",
 			"poster": "/images/movieposters/mr-robot.jpg",
-			"excerpt": "Follows a young computer programmer who suffers from social anxiety disorder and forms connections through hacking. He's recruited by a mysterious anarchist, who calls himself Mr. Robot."
+			"excerpt": "Follows a young computer programmer who suffers from social anxiety disorder and forms connections through hacking. He's recruited by a mysterious anarchist, who calls himself Mr. Robot.",
+			"url": "free_in_deed"
 		},
 		{
 			"title": "The iron giant",
+			"name": "Alicia Vikander",
 			"poster": "/images/movieposters/irongiant.jpg",
-			"excerpt": "A boy makes friend with a robot from outer space, but the army are not happy with a robot in the city."
+			"excerpt": "A boy makes friend with a robot from outer space, but the army are not happy with a robot in the city.",
+			"url": "free_in_deed"
 		}
 	]
 }
