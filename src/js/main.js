@@ -13,6 +13,7 @@
 	function bindEvents() {
 		$tipsWrapper.on('click', '.tip .teaser', onTipClick);
 		$tipsWrapper.on('click', '.tip .back-btn', onBackClick);
+		$tipsWrapper.on('click', '.tip .next-btn', onNextClick);
 	}
 
 	function onTipClick(e) {
@@ -30,15 +31,31 @@
 		updateHistory($(this).attr('href'));
 	}
 
-	function activateTip($tip) {
-		$tipsWrapper.addClass('active');
-		$tip.addClass('active');
+	function onNextClick(e) {
+		e.preventDefault();
+
+		var url = $(this).attr('href');
+
+		deactivateTips();
+		activateTipByUrl(url);
+		updateHistory(url);
 	}
 
 	function deactivateTips() {
 		$tipsWrapper.removeClass('active');
 		$tips.removeClass('active');
 	}
+
+	function activateTip($tip) {
+		$tipsWrapper.addClass('active');
+		$tip.addClass('active');
+	}
+
+	function activateTipByUrl(url) {
+		activateTip($tips.has('a[href="'+url+'"].teaser'));
+
+	}
+
 
 	function updateHistory(url) {
 		window.history.replaceState(null, null, url);

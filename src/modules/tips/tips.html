@@ -29,12 +29,12 @@
 			<img src="/images/socialmedia/mail_w_circle_32px.svg">
 		</div>
 		{{? it.next}}
-		<div class="next-tip">
-			<a href="{{=it.next.url}}" title="nästa filmtips">
-				<p class="next-tip-text">Nästa tips</p>
-				<p class="next-tip-teaser">{{=it.next.title}}</p>
-			</a>
-		</div>
+			<div class="next-tip">
+				<a href="{{=it.next.url}}#tips" title="nästa filmtips" class="next-btn">
+					<p class="next-tip-text">Nästa tips</p>
+					<p class="next-tip-teaser">{{=it.next.title}}</p>
+				</a>
+			</div>
 		{{?}}
 	</div>
 </div>
