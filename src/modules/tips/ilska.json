@@ -1,10 +1,16 @@
 {
 	"number": 4,
+	"id": "ilska",
 	"tips": "Ilska",
 	"url": "/tips/ilska",
 	"movietips": "Filmer att bli arg av",
 	"image" : "/images/gifs/ilska.gif",
 	"vimeo" : "https://player.vimeo.com/video/81109621",
+	"next": {
+		"title": "Stress",
+		"id": "stress",
+		"url": "/tips/stress"
+	},
 	"movies" : [
 		{
 			"title": "The big lebowski",

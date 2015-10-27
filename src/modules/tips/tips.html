@@ -22,18 +22,19 @@
 	</div>
 	<div class="share-tip">
 		<h2>Dela med dig</h2>
-		<input type="text" placeholder="sff.se/tips1">
+		<input type="text" placeholder="sff.se/gladje">
 		<div class="socialmedia-icons">
 			<img src="/images/socialmedia/facebook_w_circle_32px.svg">
 			<img src="/images/socialmedia/twitter_w_circle_32px.svg">
 			<img src="/images/socialmedia/mail_w_circle_32px.svg">
 		</div>
+		{{? it.next}}
 		<div class="next-tip">
-			<a href="" title="nästa filmtips">
+			<a href="{{=it.next.url}}" title="nästa filmtips">
 				<p class="next-tip-text">Nästa tips</p>
-				<div class="play"></div>
-				<p class="next-tip-teaser">Ilskan</p>
+				<p class="next-tip-teaser">{{=it.next.title}}</p>
 			</a>
 		</div>
+		{{?}}
 	</div>
 </div>

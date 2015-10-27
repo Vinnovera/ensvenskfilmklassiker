@@ -1,10 +1,16 @@
 {
 	"number": 3,
+	"id": "skrack",
 	"tips": "Skräck",
 	"url": "/tips/skrack",
 	"movietips": "Filmer att bli rädd av",
 	"image" : "/images/gifs/skrack.gif",
 	"vimeo" : "https://player.vimeo.com/video/81109621",
+	"next": {
+		"title": "Ilska",
+		"id": "ilska",
+		"url": "/tips/ilska"
+	},
 	"movies" : [
 		{
 			"title": "The big lebowski",

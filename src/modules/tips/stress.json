@@ -1,10 +1,16 @@
 {
-	"number": 1,
-	"tips": "Glädje",
-	"url": "/tips/gladje",
-	"movietips": "Filmer att skratta åt",
-	"image" : "/images/gifs/gladje.gif",
+	"number": 5,
+	"id": "stress",
+	"tips": "Stress",
+	"url": "/tips/stress",
+	"movietips": "Filmer med stress i",
+	"image" : "/images/gifs/stress.gif",
 	"vimeo" : "https://player.vimeo.com/video/81109621",
+	"next": {
+		"title": "Glädje",
+		"id": "gladje",
+		"url": "/tips/gladje"
+	},
 	"movies" : [
 		{
 			"title": "The big lebowski",
