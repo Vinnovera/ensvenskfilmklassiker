@@ -14,24 +14,24 @@
 	},
 	"movies" : [
 		{
-			"title": "The big lebowski",
-			"name": "Alicia Vikander",
+			"title": "Suffragette",
+			"name": "SARAH GAVRON",
 			"poster": "/images/movieposters/the-big-l.jpg",
-			"excerpt": "I’m the Dude, so that’s what you call me. That or, uh His Dudeness, or uh Duder, or El Duderino, if you’re not into the whole brevity thing.",
+			"excerpt": "En film om hur kvinnorna i England under 1900-talets början kämpade för rösträtt och självständighet.",
 			"url": "free_in_deed"
 		},
 		{
-			"title": "Mr.Robot",
-			"name": "Alicia Vikander",
+			"title": "Me and Earl and the Dying Girl",
+			"name": "ALFONSO GOMEZ-REJON",
 			"poster": "/images/movieposters/mr-robot.jpg",
-			"excerpt": "Follows a young computer programmer who suffers from social anxiety disorder and forms connections through hacking. He's recruited by a mysterious anarchist, who calls himself Mr. Robot.",
+			"excerpt": "Charmig amerikansk indie om vänskap, spirande känslor och sjukdom.",
 			"url": "free_in_deed"
 		},
 		{
-			"title": "The iron giant",
-			"name": "Alicia Vikander",
+			"title": "The Price of Love",
+			"name": "HERMON HAILAY",
 			"poster": "/images/movieposters/irongiant.jpg",
-			"excerpt": "A boy makes friend with a robot from outer space, but the army are not happy with a robot in the city.",
+			"excerpt": "En taxichaufför och en prostituerad ger sig ut på en osannolik jakt när en taxibil blir stulen.",
 			"url": "free_in_deed"
 		}
 	]

@@ -70,6 +70,7 @@
 			limit: 23,
 			sortBy: 'most-recent',
 			resolution: 'standard_resolution',
+			template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 			clientId: clientId
 		});
 
