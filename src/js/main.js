@@ -25,6 +25,7 @@
 		updateScreenings($tip);
 		activateTip($tip);
 		updateHistory($(this).attr('href'));
+		scrollToTip($tip);
 	}
 
 	function onBackClick(e) {
@@ -37,11 +38,14 @@
 	function onNextClick(e) {
 		e.preventDefault();
 
-		var url = $(this).attr('href');
+		var
+			url  = $(this).attr('href'),
+			$tip = getTipByUrl(url);
 
 		deactivateTips();
-		activateTipByUrl(url);
+		activateTip(url);
 		updateHistory(url);
+		scrollToTip($tip);
 	}
 
 	function deactivateTips() {
@@ -54,8 +58,8 @@
 		$tip.addClass('active');
 	}
 
-	function activateTipByUrl(url) {
-		activateTip($tips.has('a[href="'+url+'"].teaser'));
+	function getTipByUrl(url) {
+		return $tips.has('a[href="'+url+'"].teaser');
 	}
 
 	function updateScreenings($tip) {
@@ -70,6 +74,12 @@
 
 	function updateHistory(url) {
 		window.history.replaceState(null, null, url);
+	}
+
+	function scrollToTip($tip) {
+		$('html, body').animate({
+			scrollTop: $tip.find('.content').offset().top
+		}, 500);
 	}
 
 	function instaFeed() {
@@ -180,4 +190,4 @@
 			return false;
 		};
 	};
-}(window, document, Zepto);
+}(window, document, jQuery);
