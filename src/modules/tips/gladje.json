@@ -7,9 +7,9 @@
 	"image" : "/images/gifs/gladje.gif",
 	"vimeo" : "https://player.vimeo.com/video/81109621",
 	"next": {
-		"title": "Gråt",
-		"id": "grat",
-		"url": "/tips/grat"
+		"title": "Stress",
+		"id": "stress",
+		"url": "/tips/stress"
 	},
 	"movies" : [
 		{
