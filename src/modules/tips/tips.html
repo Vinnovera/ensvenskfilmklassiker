@@ -35,13 +35,15 @@
 			{{~it.movies :movie}}
 				<div class="movie">
 					<img src="{{=movie.poster}}">
-					<h3>{{=movie.title}}</h3>
-					<h4>{{=movie.name}}</h4>
-					<p class="movie-excerpt">{{=movie.excerpt}}</p>
-					<div class="showing">
-						<h4>Nästa visning</h4>
-						<p>13 nov kl 18</p>
-						<a href="http://www.stockholmfilmfestival.se/sv/festival/2015/film/{{=movie.url}}" target="blank">Köp biljett</a>
+					<div class="movie-info">
+						<h3>{{=movie.title}}</h3>
+						<h4>{{=movie.name}}</h4>
+						<p class="movie-excerpt">{{=movie.excerpt}}</p>
+						<div class="showing">
+							<h4>Nästa visning</h4>
+							<p>13 nov kl 18</p>
+							<a class="buy-btn" href="http://www.stockholmfilmfestival.se/sv/festival/2015/film/{{=movie.url}}" target="blank">Köp biljett</a>
+						</div>
 					</div>
 				</div>
 			{{~}}
