@@ -6,6 +6,7 @@
 	"movietips": "Filmer att skratta åt",
 	"image" : "/images/gifs/gladje.gif",
 	"video" : "JKtRqhOVLJk",
+	"thumbnail" : "/images/stills/gladjen.jpg",
 	"next": {
 		"title": "Stress",
 		"id": "stress",

@@ -6,6 +6,7 @@
 	"movietips": "Filmer att bli arg av",
 	"image" : "/images/gifs/ilska.gif",
 	"video" : "57iCyoVDdQA",
+	"thumbnail" : "/images/stills/ilskan.jpg",
 	"next": {
 		"title": "Glädje",
 		"id": "gladje",

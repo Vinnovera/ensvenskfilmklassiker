@@ -6,6 +6,7 @@
 	"movietips": "Filmer med stress i",
 	"image" : "/images/gifs/stress.gif",
 	"video" : "UGyns98r9fM",
+	"thumbnail" : "/images/stills/stressen.jpg",
 	"next": {
 		"title": "Gråt",
 		"id": "grat",

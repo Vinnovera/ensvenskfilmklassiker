@@ -6,6 +6,7 @@
 	"movietips": "Filmer att gråta till",
 	"image" : "/images/gifs/grat.gif",
 	"video" : "v6OAy6ssjiY",
+	"thumbnail" : "/images/stills/graten.jpg",
 	"next": {
 		"title": "Skräck",
 		"id": "skrack",
