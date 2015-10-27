@@ -12,7 +12,7 @@
 	
 		<div class="share-tip">
 			<h2>Dela</h2>
-			<input type="text" value="http://ensvenskfilmklassiker.se/{{=it.url}}">
+			<input type="text" value="http://ensvenskfilmklassiker.se{{=it.url}}#tips">
 			<div class="socialmedia-icons">
 				<img src="/images/socialmedia/facebook_w_circle_32px.svg">
 				<img src="/images/socialmedia/twitter_w_circle_32px.svg">
@@ -33,7 +33,7 @@
 	<div class="movie-tips">
 		<div class="related-movies">
 			{{~it.movies :movie}}
-				<div class="movie">
+				<div class="movie" data-movieid="{{=movie.url}}">
 					<img src="{{=movie.poster}}">
 					<div class="movie-info">
 						<h3>{{=movie.title}}</h3>
@@ -41,7 +41,7 @@
 						<p class="movie-excerpt">{{=movie.excerpt}}</p>
 						<div class="showing">
 							<h4>Nästa visning</h4>
-							<p>13 nov kl 18</p>
+							<p class="movie-screening">13 nov kl 18</p>
 							<a class="buy-btn" href="http://www.stockholmfilmfestival.se/sv/festival/2015/film/{{=movie.url}}" target="blank">Köp biljett</a>
 						</div>
 					</div>
