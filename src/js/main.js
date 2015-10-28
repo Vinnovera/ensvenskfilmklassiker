@@ -5,6 +5,7 @@
 	$(d).on('ready', function() {
 		$tipsWrapper = $('.tips');
 		$tips = $tipsWrapper.find('.tip');
+		$anchorLink = $('a[href*=#]');
 
 		initActive();
 		bindEvents();
@@ -17,6 +18,10 @@
 		$tipsWrapper.on('click', '.tip .teaser', onTipClick);
 		$tipsWrapper.on('click', '.tip .back-btn', onBackClick);
 		$tipsWrapper.on('click', '.tip .next-btn', onNextClick);
+		$anchorLink.on('click', function(e){
+			e.preventDefault();
+			scrollToAnchor($(this).attr('href'));
+		} );
 	}
 
 	function onTipClick(e) {
@@ -38,10 +43,23 @@
 
 	function onBackClick(e) {
 		e.preventDefault();
+		
+		var target = $('.tip.active');
+		if ( $(w).width() > 1000) {
+			target = $('.tips');
+		}
+	
+		$('html, body').animate(
+				{
+					scrollTop: (target.offset().top) -32
+				},
+				300
+		);
 
 		deactivateTips();
 		stopTipVideos();
 		updateHistory($(this).attr('href'));
+
 	}
 
 	function onNextClick(e) {
@@ -118,7 +136,7 @@
 		});
 	}
 
-	function deactivateTips() {
+	function deactivateTips($tip) {
 		$tipsWrapper.removeClass('active');
 		$tips.removeClass('active');
 	}
@@ -151,9 +169,24 @@
 
 		$('html, body').animate(
 			{
-				scrollTop: $tip.find('.content').offset().top
+				scrollTop: ($tip.find('.content').offset().top)-40
 			},
-			500,
+			400,
+			callback
+		);
+	}
+
+	function scrollToAnchor(anchor) {
+
+		callback = function() {
+			window.location.hash = anchor;
+		}
+
+		$('html, body').animate(
+			{
+				scrollTop: ($(anchor).offset().top)+35
+			},
+			400,
 			callback
 		);
 	}
