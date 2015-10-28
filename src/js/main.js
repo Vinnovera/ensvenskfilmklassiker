@@ -5,7 +5,6 @@
 	$(d).on('ready', function() {
 		$tipsWrapper = $('.tips');
 		$tips = $tipsWrapper.find('.tip');
-		$anchorLink = $('a[href*=#]');
 
 		initActive();
 		bindEvents();
@@ -18,10 +17,7 @@
 		$tipsWrapper.on('click', '.tip .teaser', onTipClick);
 		$tipsWrapper.on('click', '.tip .back-btn', onBackClick);
 		$tipsWrapper.on('click', '.tip .next-btn', onNextClick);
-		$anchorLink.on('click', function(e){
-			e.preventDefault();
-			scrollToAnchor($(this).attr('href'));
-		} );
+		$('body').on('click', 'a[href*=#]', onAnchorClick);
 	}
 
 	function onTipClick(e) {
@@ -78,6 +74,15 @@
 				playTipVideo($tip);
 			});
 		});
+	}
+
+	function onAnchorClick(e) {
+		e.preventDefault();
+
+		var target  = $(this).attr('href');
+
+		scrollToAnchor(target);
+
 	}
 
 	function initActive() {
@@ -169,7 +174,7 @@
 
 		$('html, body').animate(
 			{
-				scrollTop: ($tip.find('.content').offset().top)-40
+				scrollTop: ($tip.find('.content').offset().top)
 			},
 			400,
 			callback
@@ -177,14 +182,16 @@
 	}
 
 	function scrollToAnchor(anchor) {
+		
+		event.preventDefault();
 
-		callback = function() {
-			window.location.hash = anchor;
+		var callback = function() {
+			updateHistory(anchor) = anchor;
 		}
 
 		$('html, body').animate(
 			{
-				scrollTop: ($(anchor).offset().top)+35
+				scrollTop: $(anchor).offset().top
 			},
 			400,
 			callback
