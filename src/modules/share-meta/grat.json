@@ -1,0 +1,16 @@
+{
+	"fb": {
+		"title": "En svensk filmklassiker - Gråt",
+		"image": "/images/stills/graten.jpg",
+		"sitename": "En svensk filmklassiker - Gråt",
+		"description": ""
+	},
+
+	"twitter": {
+		"card": "summary",
+		"site": "@stockholmfilmfest",
+		"title": "En svensk filmklassiker - Gråt",
+		"description": "",
+		"image": "/images/stills/graten.jpg"
+	}
+}

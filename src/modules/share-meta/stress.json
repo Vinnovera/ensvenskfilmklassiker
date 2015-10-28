@@ -1,0 +1,16 @@
+{
+	"fb": {
+		"title": "En svensk filmklassiker - Stress",
+		"image": "/images/stills/stressen.jpg",
+		"sitename": "En svensk filmklassiker - Stress",
+		"description": ""
+	},
+
+	"twitter": {
+		"card": "summary",
+		"site": "@stockholmfilmfest",
+		"title": "En svensk filmklassiker - Stress",
+		"description": "",
+		"image": "/images/stills/stressen.jpg"
+	}
+}

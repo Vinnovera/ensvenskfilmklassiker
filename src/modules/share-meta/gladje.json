@@ -1,0 +1,16 @@
+{
+	"fb": {
+		"title": "En svensk filmklassiker - Glädje",
+		"image": "/images/stills/gladjen.jpg",
+		"sitename": "En svensk filmklassiker - Glädje",
+		"description": ""
+	},
+
+	"twitter": {
+		"card": "summary",
+		"site": "@stockholmfilmfest",
+		"title": "En svensk filmklassiker - Glädje",
+		"description": "",
+		"image": "/images/stills/gladjen.jpg"
+	}
+}

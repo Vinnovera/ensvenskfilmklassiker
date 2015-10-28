@@ -1,0 +1,16 @@
+{
+	"fb": {
+		"title": "En svensk filmklassiker - Skräck",
+		"image": "/images/stills/skracken.jpg",
+		"sitename": "En svensk filmklassiker - Skräck",
+		"description": ""
+	},
+
+	"twitter": {
+		"card": "summary",
+		"site": "@stockholmfilmfest",
+		"title": "En svensk filmklassiker - Skräck",
+		"description": "",
+		"image": "/images/stills/skracken.jpg"
+	}
+}

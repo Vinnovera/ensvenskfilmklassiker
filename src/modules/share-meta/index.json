@@ -1,0 +1,16 @@
+{
+	"fb": {
+		"title": "En svensk filmklassiker",
+		"image": "/images/sff_logo_black.svg",
+		"sitename": "En svensk filmklassiker",
+		"description": "Anta årets utmaning och gör En Svensk Filmklassiker. Se 12 filmer på 12 dagar på Stockholms filmfestival. Börja öva upp känslolivet nu! http://ensvenskfilmklassiker.se"
+	},
+
+	"twitter": {
+		"card": "summary",
+		"site": "@stockholmfilmfest",
+		"title": "En svensk filmklassiker",
+		"description": "Jag övar inför En Svensk Filmklassiker och ska se 12 filmer på 12 dagar på Stockholms filmfestival. http://ensvenskfilmklassiker.se",
+		"image": "/images/sff_logo_black.svg"
+	}
+}
