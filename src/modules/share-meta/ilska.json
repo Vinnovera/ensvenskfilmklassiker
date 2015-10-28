@@ -1,0 +1,16 @@
+{
+	"fb": {
+		"title": "En svensk filmklassiker - Ilska",
+		"image": "/images/stills/ilskan.jpg",
+		"sitename": "En svensk filmklassiker - Ilska",
+		"description": ""
+	},
+
+	"twitter": {
+		"card": "summary",
+		"site": "@stockholmfilmfest",
+		"title": "En svensk filmklassiker - Ilska",
+		"description": "",
+		"image": "/images/stills/ilskan.jpg"
+	}
+}
