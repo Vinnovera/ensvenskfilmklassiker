@@ -28,18 +28,13 @@
 
 		deactivateTips();
 		stopTipVideos();
+		activateTip($tip);
 		updateScreenings($tip);
 		updateHistory($(this).attr('href'));
-		scrollToTip($tip, function() {
-			activateTip($tip);
-			setTimeout(function(){
-				scrollToTipContent($tip, function(){
-					loadTipVideo($tip, function() {
-						playTipVideo($tip);
-					});
-				})
-			}, 600);
-
+		scrollToTipContent($tip, function(){
+			loadTipVideo($tip, function() {
+				playTipVideo($tip);
+			});
 		});
 	}
 
@@ -48,15 +43,10 @@
 		
 		var target = $('.tip.active');
 		if ( $(w).width() > 1000) {
-			target = $('.tips');
+			target = $('.movies');
 		}
 	
-		$('html, body').animate(
-				{
-					scrollTop: target.offset().top
-				},
-				500
-		);
+		scrollToTip(target);
 
 		deactivateTips();
 		stopTipVideos();
