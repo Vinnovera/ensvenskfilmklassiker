@@ -16,21 +16,21 @@
 		{
 			"title": "The Survivalist",
 			"name": "STEPHEN FINGLETON",
-			"poster": "/images/movieposters/the-big-l.jpg",
+			"poster": "/images/movieposters/the_survivalist.jpg",
 			"excerpt": "Paranoida The survivalist lever isolerad i en dystopisk värld där enda målet är att inte svälta ihjäl.",
 			"url": "the_survivalist"
 		},
 		{
 			"title": "Horror Night Deluxe",
 			"name": "William Friedkin, Daniel di Grado, Can Evrenol",
-			"poster": "/images/movieposters/mr-robot.jpg",
+			"poster": "/images/movieposters/horror.jpg",
 			"excerpt": "Fredag den 13:e innebär skräckmaraton! Exorcisten, Alena och Baskin i en sittning.",
 			"url": "stockholm_achievement_award"
 		},
 		{
 			"title": "The Wave",
 			"name": "ROAR UTHAUG",
-			"poster": "/images/movieposters/irongiant.jpg",
+			"poster": "/images/movieposters/the_wave.jpg",
 			"excerpt": "Skandinaviens första katastroffilm. Norska fjordbyn Geiranger räds ännu ett katastrofalt jordskred.",
 			"url": "the_wave"
 		}

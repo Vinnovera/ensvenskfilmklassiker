@@ -34,7 +34,7 @@
 		<div class="related-movies">
 			{{~it.movies :movie}}
 				<div class="movie" data-movieid="{{=movie.url}}">
-					<img src="{{=movie.poster}}">
+					<div class="poster" style="background-image: url({{=movie.poster}});"></div>
 					<div class="movie-info">
 						<h3>{{=movie.title}}</h3>
 						<h4>{{=movie.name}}</h4>
