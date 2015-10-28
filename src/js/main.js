@@ -29,12 +29,17 @@
 		deactivateTips();
 		stopTipVideos();
 		updateScreenings($tip);
-		activateTip($tip);
 		updateHistory($(this).attr('href'));
 		scrollToTip($tip, function() {
-			loadTipVideo($tip, function() {
-				playTipVideo($tip);
-			});
+			activateTip($tip);
+			setTimeout(function(){
+				scrollToTipContent($tip, function(){
+					loadTipVideo($tip, function() {
+						playTipVideo($tip);
+					});
+				})
+			}, 600);
+
 		});
 	}
 
@@ -48,9 +53,9 @@
 	
 		$('html, body').animate(
 				{
-					scrollTop: (target.offset().top) -32
+					scrollTop: target.offset().top
 				},
-				300
+				500
 		);
 
 		deactivateTips();
@@ -70,7 +75,7 @@
 		stopTipVideos();
 		activateTip($tip);
 		updateHistory(url);
-		scrollToTip($tip, function() {
+		scrollToTipContent($tip, function() {
 			loadTipVideo($tip, function() {
 				playTipVideo($tip);
 			});
@@ -183,9 +188,21 @@
 
 		$('html, body').animate(
 			{
-				scrollTop: ($tip.find('.content').offset().top)
+				scrollTop: ($tip.offset().top)
 			},
 			400,
+			callback
+		);
+	}
+
+	function scrollToTipContent($tip, callback) {
+		callback = callback || function() {};
+
+		$('html, body').animate(
+			{
+				scrollTop: ($tip.find('.content').offset().top)
+			},
+			200,
 			callback
 		);
 	}
@@ -195,7 +212,7 @@
 		event.preventDefault();
 
 		var callback = function() {
-			updateHistory(anchor) = anchor;
+			updateHistory(anchor);
 		}
 
 		$('html, body').animate(
