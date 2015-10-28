@@ -11,7 +11,7 @@ $red = #FF453E
 $regular_font = "Gotham A", "Gotham B", sans-serif
 $condensed_font = "Gotham Cond A", "Gotham Cond B", sans-serif
 
-$activeTipHeight = 1200px
+$activeTipHeight = 1260px
 
 body {
 	font-family: $regular_font
@@ -366,16 +366,15 @@ h2 {
 									&:before{
 										content: '';
 										width: 140px;
-										height: 140px;
+										height: 280px;
 										display: block;
 										background: $turquoise;
-										border-radius: 50%;
 										position: absolute;
-										top: -110%;
-										left: -22px;
-										transform: scale(0);
+										top: -350%;
+										left: -180%;
+										transform: rotate(45deg);
 										z-index: -1;
-										transition: transform .2s ease-out;
+										transition: left .3s ease-out;
 									}
 									&:after{
 										content: '';
@@ -391,7 +390,7 @@ h2 {
 										color: white;
 										background: $turquoise;
 										&:before{
-											transform: scale(1);
+											left: -28%;
 										}
 									}
 								}
