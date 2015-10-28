@@ -12,27 +12,31 @@
 /*******************************************************/
 
 .instagram-feed {	
-	.top-content {	
+	.top-content {
+		position: relative;	
 		.about-info {
-			padding: 0 10% 10% 10%;
+			padding: 190px 10% 10% 10%;
 			width: 80%;
 		}
 		
 		
 		.instagram-box {
 			overflow-x: scroll;
+			position: absolute;
+			top: 90px;
+			width: 100%;	
 			
 			img {
-				height: 150px;
-				width: 150px;
+				height: 160px;
+				width: 160px;
 			}
 			
 			.all-images {
-				width: 3600px;
+				width: (160*24)px;
 		
 				.more-images {
-					height: 150px;
-					width: 150px;
+					height: 160px;
+					width: 160px;
 				}
 			}		
 		}
