@@ -394,33 +394,59 @@ h2 {
 				.share-tip {
 					
 					display: inline-block;
+					max-width: 600px;
 					overflow: hidden;
+					width: 100%;
 
-					h2 {
-						font-size: 12pt;
+					h3 {
+						font-size: 16pt;
 						text-transform: uppercase;
 						float:left;
 						padding: 0;
+						line-height: 50px;
+						margin: 0 5px 0 0;
 					}
 					
 					input {
 						float: left;
 						margin-left: 10px;
 						border-radius: 2px;
-						height: 28px;
+						height: 32px;
 						color: black;
-						width: auto;
+						width: 51%;
+						font-size: .9em;
 						padding: 4px 7px;
+						margin: 5px;
+						border: 1px solid black
 					}
 					
 					.socialmedia-icons {
 						float: left;
-						
-						img {
-							width: 35px;
-							height: 35px;
-							padding: 3px 5px 3px 3px;
+						overflow: hidden;
+						a {
+							width: 44px;
+							height: 44px;
+							margin: 3px 5px;
+							background-position: center center;
+							background-repeat: no-repeat;
+							display: block;
+							float: left;
+							transition: opacity 0.1s linear;
+							opacity: 0.5;
+							&.facebook{
+								background-image: url('/images/socialmedia/facebook.svg');
+							}
+							&.twitter{
+								background-image: url('/images/socialmedia/twitter.svg');
+							}
+							&.mail{
+								background-image: url('/images/socialmedia/mail.svg');
+							}
+							&:hover{
+								opacity: 1;
+							}
 						}
+						
 					}
 					
 					.next-tip{
