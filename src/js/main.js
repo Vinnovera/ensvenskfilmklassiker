@@ -6,6 +6,7 @@
 		$tipsWrapper = $('.tips');
 		$tips = $tipsWrapper.find('.tip');
 
+		initActive();
 		bindEvents();
 		instaFeed();
 	});
@@ -61,6 +62,19 @@
 		});
 	}
 
+	function initActive() {
+		var $tip = $tips.filter('.active');
+
+		if ($tip.length) {
+			updateScreenings($tip);
+			scrollToTip($tip, function() {
+				loadTipVideo($tip, function() {
+					playTipVideo($tip);
+				});
+			});
+		}
+	}
+
 	function loadTipVideo($tip, callback) {
 		callback = callback || function() {};
 
@@ -73,6 +87,8 @@
 
 			video = new YT.Player($video.get(0), {
 				videoId: videoId,
+				width: '',
+				height: '',
 				events: {
 					'onReady': callback
 				}
