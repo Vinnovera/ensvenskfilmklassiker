@@ -17,6 +17,7 @@
 		$tipsWrapper.on('click', '.tip .teaser', onTipClick);
 		$tipsWrapper.on('click', '.tip .back-btn', onBackClick);
 		$tipsWrapper.on('click', '.tip .next-btn', onNextClick);
+		$tipsWrapper.on('click', '.socialmedia-icons a:not(.mail)', onShareClick);
 		$('body').on('click', 'a[href*=#]', onAnchorClick);
 	}
 
@@ -82,6 +83,14 @@
 		var target  = $(this).attr('href');
 
 		scrollToAnchor(target);
+
+	}
+
+	function onShareClick(e) {
+
+		var url  = $(this).attr('href');
+		window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+		return false;
 
 	}
 

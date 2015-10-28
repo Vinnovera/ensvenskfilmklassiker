@@ -11,12 +11,12 @@
 	<div class="tip-info">
 	
 		<div class="share-tip">
-			<h2>Dela</h2>
+			<h3>Dela {{=it.tips}}</h3>
 			<input type="text" value="http://ensvenskfilmklassiker.se{{=it.url}}">
 			<div class="socialmedia-icons">
-				<img src="/images/socialmedia/facebook_w_circle_32px.svg">
-				<img src="/images/socialmedia/twitter_w_circle_32px.svg">
-				<img src="/images/socialmedia/mail_w_circle_32px.svg">
+				<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//ensvenskfilmklassiker.se{{=it.url}}&t=En svensk filmklassiker - {{=it.tips}}" target="_blank" title="Dela på Facebook"></a>
+				<a class="twitter" href="https://twitter.com/home?status={{=it.tips}}! Jag övar inför En Svensk Filmklassiker och ska se 12 filmer på 12 dagar på Stockholms filmfestival. http%3A//ensvenskfilmklassiker.se{{=it.url}}"></a>
+				<a class="mail" href="mailto:?&subject=En%20Svensk%20Filmklassiker%20-%20{{=it.tips}}&body=Jag%20%C3%B6var%20inf%C3%B6r%20En%20Svensk%20Filmklassiker%20och%20ska%20se%2012%20filmer%20p%C3%A5%2012%20dagar%20p%C3%A5%20Stockholms%20filmfestival.%0A%0Ahttp%3A//ensvenskfilmklassiker.se{{=it.url}}%0A%0AAnta%20%C3%A5rets%20utmaning%20och%20g%C3%B6r%20En%20Svensk%20Filmklassiker.%20Se%2012%20filmer%20p%C3%A5%2012%20dagar%20p%C3%A5%20Stockholms%20filmfestival.%20B%C3%B6rja%20%C3%B6va%20upp%20k%C3%A4nslolivet%20nu!"></a>
 			</div>
 			{{? it.next}}
 				<div class="next-tip">
