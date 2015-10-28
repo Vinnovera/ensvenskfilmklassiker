@@ -74,10 +74,11 @@
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	overflow: hidden;
+	background: $turquoise;
 	
 	&.active {
 		position: relative;
-		background: $turquoise;
 		padding-top: $activeTipHeight;
 		margin-top: 32px;
 		&:before{
@@ -119,7 +120,6 @@
 		width: (100% / 3);
 		padding: 0;
 		margin: 0;
-		background: red;
 		box-sizing: border-box;
 		
 		&.active {
@@ -136,6 +136,7 @@
 			.content {
 				display: block;
 				max-height: 99999px;
+				background: none;
 			}
 			
 		}
@@ -196,6 +197,9 @@
 		}
 		
 		.content {
+			&:before{
+				content none;
+			}
 			display: none;
 			position: absolute;
 			left: 0;
@@ -206,8 +210,20 @@
 			overflow: visible;
 			margin-top: 0;
 			color: white;
+			.tip-info{
+				.share-tip {
+					width: 100%;
+					.socialmedia-icons a{
+						opacity: 0.5;
+					}
+				}
+			}
 			.back-btn{
 				color: black;
+				top: 10px;
+				&:before{
+					background-image: url('/images/close.svg');
+				}
 			}
 			.video {
 				width: 100%;
@@ -236,10 +252,6 @@
 		.hashtag-box {
 			display: block;
 			text-align: center;
-			
-			.hashtag-info {
-				width: 100%;
-			}
 		}
 		
 		.about-info{

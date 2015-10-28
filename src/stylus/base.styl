@@ -53,36 +53,37 @@ h2 {
 
 .intro {
 	background: black;
-	min-height: 600px;
+	height: 100vh;
 	.intro-content {		
 		color: $turquoise;
+		display:
 
 		.top-logo-wrapper{
 			background: $turquoise;
+			height: 15vh;
+			padding: 3vh 0;
 			.top-logo {
 				background: url("../images/sff_logo_black.svg") no-repeat center center;
-				max-width: 140px;
-				height: 140px;
-				width: 30%;
+				height: 14vh;
+				width: 100%;
 				display: block;
-				margin: 0 auto;
-				padding: 3% 0;
 			}
 		}
 		
 		.mid-content{
+			
 			width: 80%;
 			max-width: 480px;
-			margin: 0 10%;
-			display: block;
-		
+			margin: 0 auto;
+			position: relative;
+			height: 100vh;	
 		
 			.mid-logo {
-				background: url("../images/logo2.svg") no-repeat center center;
-				margin: 10% 0;
-				max-width: 480px;
+				background: url("../images/logo2.svg") no-repeat 50% 10%;
 				width: 100%;
-				height: 350px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
 			}
 			
 			.intro-text-bottom {
@@ -91,11 +92,15 @@ h2 {
 				font-style: normal;
 				font-size: 2.2em;
 				padding: 1em 0;
+				position: absolute;
+				bottom: 40%;
 			}
 		}
 	}
 	.call-to-action{
 		bottom 0;
+		position: absolute;
+		padding: 4vh 10%;
 	}
 	
 }
@@ -153,11 +158,11 @@ h2 {
 		box-sizing: border-box;
 		
 		&.active {
-			
+
 			.content {
 				max-height: 2000px;
 				overflow: visible;
-				margin-top: 50px;
+				padding-top: 50px;
 				padding-bottom: 2em;
 			}
 			
@@ -219,12 +224,20 @@ h2 {
 			background: $turquoise;
 			position: relative;
 			transition: max-height .6s ease-out;
+			&:before{
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 50px;
+					background: black
+					top: 0;
+			}
 			.back-btn{
 				position: absolute;
 				font-family: $condensed_font;
-				color: white;
-				top: -35px;
-				right: 5px;
+				color: $turquoise;
+				top: 7px;
+				right: 7px;
 				height: 32px;
 				text-transform: uppercase;
 				text-decoration: none;
@@ -237,15 +250,18 @@ h2 {
 				display: block;
 				&:before{
 					content ''
-					background: url('/images/close.svg') center center no-repeat;
+					background: url('/images/close_green.svg') center center no-repeat;
 					float: left;
 					margin-right: 7px;
 					width: 22px;
 					height: 32px;
 					display: block;
 				}
-				&:hover:before{
-					background-image: url('/images/close_green.svg')
+				&:hover{
+					color: $turquoise;
+					&:before{
+						background-image: url('/images/close_green.svg')
+					}
 				}
 				
 			}
@@ -396,7 +412,7 @@ h2 {
 					display: inline-block;
 					max-width: 600px;
 					overflow: hidden;
-					width: 100%;
+					width: auto;
 
 					h3 {
 						font-size: 16pt;
@@ -432,7 +448,7 @@ h2 {
 							display: block;
 							float: left;
 							transition: opacity 0.1s linear;
-							opacity: 0.5;
+							opacity: 1;
 							&.facebook{
 								background-image: url('/images/socialmedia/facebook.svg');
 							}
@@ -492,11 +508,12 @@ h2 {
 	width: 80%;
 	font-family: $condensed_font;
 	text-transform: uppercase;
-	font-size: 22pt;
+	font-size: 18pt;
 	text-decoration: none;
 	font-weight: 500;
 	letter-spacing: 0.03em;
 	cursor: pointer;
+	text-align: center;
 	p {
 		margin: 0;
 		position: relative;
@@ -540,7 +557,19 @@ h2 {
 		width: 100%;
 		padding: .5em 0 0 0;
 		
-		.hashtag-box h2
+		.hashtag-box{
+			padding: 0 10%;
+			.hashtag-info{
+					display: inline-block;
+					width: auto;
+					border-bottom: 4px solid transparent;
+					padding: 0;
+					max-width: 100%;
+					&:hover{
+						border-color: $turquoise;
+					}
+			}
+		}
 		
 		.instagram-box {	
 			.all-images {
