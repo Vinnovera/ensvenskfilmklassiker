@@ -438,6 +438,10 @@ h2 {
 						border: 1px solid black
 					}
 					
+					a{
+						transition: opacity 0.1s linear;
+					}
+					
 					.socialmedia-icons {
 						float: left;
 						overflow: hidden;
@@ -449,7 +453,6 @@ h2 {
 							background-repeat: no-repeat;
 							display: block;
 							float: left;
-							transition: opacity 0.1s linear;
 							opacity: 1;
 							&.facebook{
 								background-image: url('/images/socialmedia/facebook.svg');
@@ -472,9 +475,35 @@ h2 {
 						position: absolute;
 						right: 0;
 						display: none;
+						text-align: left;
+						min-width: 5%;
+						padding: 3px 1em 0 0;
+						
 						a{
 							color: black;
-							text-decoration: none;
+							text-transform: uppercase;
+							opacity: 0.5;
+							display: block;
+							.next-tip-text{
+								font-weight: 300;
+								border-bottom: 1px solid black;
+								width: 100%;
+							}
+							.next-tip-teaser{
+								font-size: 1.5em;
+								font-weight: 500;
+								&:before {
+									content: '';
+									float: left;
+									margin: 7px 5px 7px 0;
+									border-top: 8px solid transparent;
+									border-left: 12px solid black;
+									border-bottom: 8px solid transparent;
+								}
+							}
+							&:hover{
+								opacity: 1;
+							}
 						}
 					}
 				}
