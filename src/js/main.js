@@ -33,7 +33,7 @@
 		updateHistory($(this).attr('href'));
 		scrollToTipContent($tip, function(){
 			loadTipVideo($tip, function() {
-				playTipVideo($tip);
+				//playTipVideo($tip);
 			});
 		});
 	}
@@ -64,10 +64,11 @@
 		deactivateTips();
 		stopTipVideos();
 		activateTip($tip);
+		updateScreenings($tip);
 		updateHistory(url);
 		scrollToTipContent($tip, function() {
 			loadTipVideo($tip, function() {
-				playTipVideo($tip);
+				//playTipVideo($tip);
 			});
 		});
 	}
